@@ -25,7 +25,7 @@ proximity_fade_distance = 0.0
 [node name="Player" type="Node3D"]
 
 [node name="Player" type="RigidBody3D" parent="." node_paths=PackedStringArray("cameraHolder")]
-transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 0, 0)
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 0.403065, 0)
 collision_layer = 2
 physics_material_override = SubResource("PhysicsMaterial_eufuu")
 gravity_scale = 3.0
@@ -40,5 +40,6 @@ mesh = SubResource("SphereMesh_pnrsi")
 surface_material_override/0 = SubResource("StandardMaterial3D_odgib")
 
 [node name="GroundDetector" type="RayCast3D" parent="Player"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4249, 0)
 
 [node name="CameraHolder" parent="." instance=ExtResource("2_pgxj6")]

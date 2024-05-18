@@ -1,19 +1,31 @@
-[gd_scene load_steps=2 format=3 uid="uid://hx6vmxkr1agi"]
+[gd_scene load_steps=5 format=3 uid="uid://hx6vmxkr1agi"]
 
 [ext_resource type="Script" path="res://CameraHolder.gd" id="1_rg7mf"]
+[ext_resource type="Texture2D" uid="uid://dwyuyh4jffipq" path="res://phil_face.png" id="2_dg27t"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_edba3"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jc3i4"]
+transparency = 1
+albedo_texture = ExtResource("2_dg27t")
+uv1_scale = Vector3(3, 2, 1)
 
 [node name="CameraHolder" type="Node3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 0.972529, 0.232783, 0, -0.232783, 0.972529, 0, 0.978384, -1.49124)
 script = ExtResource("1_rg7mf")
 
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+visible = false
+mesh = SubResource("BoxMesh_edba3")
+surface_material_override/0 = SubResource("StandardMaterial3D_jc3i4")
+
 [node name="neck" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 
 [node name="cast" type="RayCast3D" parent="neck"]
-transform = Transform3D(1, 0, 0, 0, 1, -1.04308e-07, 0, 1.04308e-07, 1, 0, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 1, -1.04308e-07, 0, 1.04308e-07, 1, 0, -0.222, 4)
 target_position = Vector3(0, 0, -1)
 hit_from_inside = true
 
 [node name="Camera" type="Camera3D" parent="neck"]
-transform = Transform3D(1, 0, 0, 0, 1, -5.96046e-08, 0, 5.96046e-08, 1, 0, 0, 2)
+transform = Transform3D(1, 0, 0, 0, 1, -5.96046e-08, 0, 5.96046e-08, 1, 0, -0.222, 4)
 fov = 99.4
