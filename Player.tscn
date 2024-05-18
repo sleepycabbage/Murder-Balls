@@ -40,6 +40,5 @@ mesh = SubResource("SphereMesh_pnrsi")
 surface_material_override/0 = SubResource("StandardMaterial3D_odgib")
 
 [node name="GroundDetector" type="RayCast3D" parent="Player"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4249, 0)
 
 [node name="CameraHolder" parent="." instance=ExtResource("2_pgxj6")]

@@ -11,7 +11,7 @@ albedo_texture = ExtResource("2_dg27t")
 uv1_scale = Vector3(3, 2, 1)
 
 [node name="CameraHolder" type="Node3D"]
-transform = Transform3D(1, 0, 0, 0, 0.972529, 0.232783, 0, -0.232783, 0.972529, 0, 0.978384, -1.49124)
+transform = Transform3D(1, 0, 0, 0, 0.972529, 0.232783, 0, -0.232783, 0.972529, 0, 0, 0)
 script = ExtResource("1_rg7mf")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
@@ -22,7 +22,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_jc3i4")
 [node name="neck" type="Node3D" parent="."]
 
 [node name="cast" type="RayCast3D" parent="neck"]
-transform = Transform3D(1, 0, 0, 0, 1, -1.04308e-07, 0, 1.04308e-07, 1, 0, -0.222, 4)
+transform = Transform3D(1, 0, 0, 0, 1, -1.04308e-07, 0, 1.04308e-07, 1, 0, -0.222, 4.5)
 target_position = Vector3(0, 0, -1)
 hit_from_inside = true
 
