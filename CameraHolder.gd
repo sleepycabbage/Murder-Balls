@@ -6,9 +6,9 @@ const DEFAULTDISTANCE=3
 
 var distance=DEFAULTDISTANCE
 
-@onready var camera=$Camera
+@onready var camera=$neck
 
-@onready var raycast=$cast
+@onready var raycast=$neck/cast
 
 func _ready(): 
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
@@ -23,8 +23,7 @@ func _unhandled_input(event):
 func _physics_process(delta):
 	distance=DEFAULTDISTANCE
 	raycast.target_position.z=-distance
-	raycast.position.z=distance
-	raycast.rotation.x=-camera.rotation.x
+	#raycast.position.z=distance
 	if (raycast.is_colliding()):
 		distance = (raycast.global_position - raycast.get_collision_point()).length()
 	camera.position.z=distance

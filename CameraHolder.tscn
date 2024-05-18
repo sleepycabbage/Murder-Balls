@@ -14,16 +14,18 @@ uv1_scale = Vector3(3, 2, 1)
 transform = Transform3D(1, 0, 0, 0, 0.972529, 0.232783, 0, -0.232783, 0.972529, 0, 0.978384, -1.49124)
 script = ExtResource("1_rg7mf")
 
-[node name="cast" type="RayCast3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, -8.9407e-08, 0, 8.9407e-08, 1, 0, -0.222, 4)
-target_position = Vector3(0, 0, -1)
-hit_from_inside = true
-
-[node name="Camera" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, -4.47035e-08, 0, 4.47035e-08, 1, 0, -0.222, 4)
-fov = 99.4
-
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 visible = false
 mesh = SubResource("BoxMesh_edba3")
 surface_material_override/0 = SubResource("StandardMaterial3D_jc3i4")
+
+[node name="neck" type="Node3D" parent="."]
+
+[node name="cast" type="RayCast3D" parent="neck"]
+transform = Transform3D(1, 0, 0, 0, 1, -1.04308e-07, 0, 1.04308e-07, 1, 0, -0.222, 4)
+target_position = Vector3(0, 0, -1)
+hit_from_inside = true
+
+[node name="Camera" type="Camera3D" parent="neck"]
+transform = Transform3D(1, 0, 0, 0, 1, -5.96046e-08, 0, 5.96046e-08, 1, 0, -0.222, 4)
+fov = 99.4
