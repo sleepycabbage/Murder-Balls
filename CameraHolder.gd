@@ -6,7 +6,7 @@ const DEFAULTDISTANCE=3
 
 var distance=DEFAULTDISTANCE
 
-@onready var camera=$neck
+@onready var camera=$neck/Camera
 
 @onready var raycast=$neck/cast
 
