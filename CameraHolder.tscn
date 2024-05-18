@@ -22,8 +22,8 @@ surface_material_override/0 = SubResource("StandardMaterial3D_jc3i4")
 [node name="neck" type="Node3D" parent="."]
 
 [node name="cast" type="RayCast3D" parent="neck"]
-transform = Transform3D(1, 0, 0, 0, 1, -1.04308e-07, 0, 1.04308e-07, 1, 0, -0.222, 4.5)
-target_position = Vector3(0, 0, -1)
+transform = Transform3D(1, 0, 0, 0, 1, -1.04308e-07, 0, 1.04308e-07, 1, 0, -0.222, 0)
+target_position = Vector3(0, 0, 3)
 hit_from_inside = true
 
 [node name="Camera" type="Camera3D" parent="neck"]

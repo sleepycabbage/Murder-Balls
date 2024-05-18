@@ -26,6 +26,7 @@ func _unhandled_input(event):
 func _physics_process(delta):
 	distance=DEFAULTDISTANCE
 	raycast.target_position.z = distance
+	raycast.target_position.z = distance
 	#raycast.position.z=distance
 	if (raycast.is_colliding()):
 		distance = (raycast.global_position - raycast.get_collision_point()).length() - WALLCAMERAOFFSET
