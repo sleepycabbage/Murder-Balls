@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://cgpu1mdk0v8tp"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_hdn0y"]
+
+[node name="Physics Cube" type="RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, -1.49012e-08, 0, 1.49012e-08, 1, 0, 0.996147, -6.43052)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.434913, 0, 0, 0, 1, 0, 0, 0)
+shape = SubResource("BoxShape3D_hdn0y")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="CollisionShape3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 1.49012e-08, 0, -1.49012e-08, 1, 0, 0, 0)

@@ -1,0 +1,45 @@
+[gd_scene load_steps=8 format=3 uid="uid://4rchtdy7qffx"]
+
+[ext_resource type="Script" path="res://Movement.gd" id="1_fxe74"]
+[ext_resource type="Texture2D" uid="uid://dlhxovx610utk" path="res://phil_body.png" id="2_gb16y"]
+[ext_resource type="PackedScene" uid="uid://hx6vmxkr1agi" path="res://CameraHolder.tscn" id="2_pgxj6"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_eufuu"]
+bounce = 0.71
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_wj73p"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_pnrsi"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_odgib"]
+albedo_texture = ExtResource("2_gb16y")
+roughness = 0.5
+emission_energy_multiplier = 0.0
+normal_scale = 8.91
+anisotropy = 1.0
+heightmap_scale = -16.0
+uv1_scale = Vector3(3, 2, 1)
+grow_amount = 0.095
+proximity_fade_distance = 0.0
+
+[node name="Player" type="Node3D"]
+
+[node name="Player" type="RigidBody3D" parent="." node_paths=PackedStringArray("cameraHolder")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 0.403065, 0)
+collision_layer = 2
+physics_material_override = SubResource("PhysicsMaterial_eufuu")
+gravity_scale = 3.0
+script = ExtResource("1_fxe74")
+cameraHolder = NodePath("../CameraHolder")
+
+[node name="Collider" type="CollisionShape3D" parent="Player"]
+shape = SubResource("SphereShape3D_wj73p")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Player/Collider"]
+mesh = SubResource("SphereMesh_pnrsi")
+surface_material_override/0 = SubResource("StandardMaterial3D_odgib")
+
+[node name="GroundDetector" type="RayCast3D" parent="Player"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4249, 0)
+
+[node name="CameraHolder" parent="." instance=ExtResource("2_pgxj6")]

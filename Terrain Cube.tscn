@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://c0ppisg4me6c1"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_spoty"]
+
+[node name="terrain wall" type="RigidBody3D"]
+freeze = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(67.0314, 0, 0, 0, 1, 0, 0, 0, 46.2716, 0, 0, 0)
+shape = SubResource("BoxShape3D_spoty")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="CollisionShape3D"]
