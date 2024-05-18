@@ -1,4 +1,5 @@
 res://node_3d.tscn
-res://CameraHolder.tscn
 res://Player.tscn
+res://CameraHolder.tscn
+res://Movement.gd
 res://CameraHolder.gd

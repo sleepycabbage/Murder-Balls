@@ -32,8 +32,10 @@ func _physics_process(delta):
 			linear_velocity.y=jumpForce
 			coyoteTime=0
 	cameraHolder.position=position
+	
 	var inputDirection=Input.get_vector("Left","Right","Forward","Backward")
 	var direction = (cameraHolder.transform.basis * Vector3(inputDirection.x,0,inputDirection.y)).normalized()
+	
 	if direction:
 		angular_velocity.z+=-direction.x*delta*ACCELERATION
 		# quick turns
@@ -45,4 +47,7 @@ func _physics_process(delta):
 			angular_velocity.x=sign(direction.z)*abs(angular_velocity.x)*TURNAROUNDMULTIPLIER
 		angular_velocity.z=clamp(angular_velocity.z,-movementSpeed,movementSpeed)
 		angular_velocity.x=clamp(angular_velocity.x,-movementSpeed,movementSpeed)
+	
+	
+	groundDetector.global_rotation=Vector3.ZERO
 	pass

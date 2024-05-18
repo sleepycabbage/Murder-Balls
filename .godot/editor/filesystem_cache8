@@ -1,13 +1,13 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1716045745
-CameraHolder.gd::GDScript::-1::1716045217::0::1::::<>Node3D<>::
-CameraHolder.tscn::PackedScene::540722988546162100::1716045745::0::1::::<><>::res://CameraHolder.gd
-Camera_Holder.tscn::PackedScene::5270568280654994445::1715993024::0::1::::<><>::res://CameraHolder.gd
-icon.svg::CompressedTexture2D::2223087669956469933::1715910275::1716045602::1::::<><>::
-Movement.gd::GDScript::-1::1716043435::0::1::::<>RigidBody3D<>::
-node_3d.tscn::PackedScene::2341984395447667640::1716045744::0::1::::<><>::uid://cgpu1mdk0v8tp::::res://Physics_Cube.tscn<>uid://4rchtdy7qffx::::res://Player.tscn<>uid://c0ppisg4me6c1::::res://Terrain Cube.tscn
-phil_body.png::CompressedTexture2D::7947212607289478888::1716000058::1716045602::1::::<><>::
-phil_face.png::CompressedTexture2D::8754219289001082886::1716000058::1716045767::1::::<><>::
-Physics_Cube.tscn::PackedScene::5226201501425391441::1715995234::0::1::::<><>::
-Player.tscn::PackedScene::2070705825576736277::1716045744::0::1::::<><>::res://Movement.gd<>uid://dlhxovx610utk::::res://phil_body.png<>uid://hx6vmxkr1agi::::res://CameraHolder.tscn
-Terrain Cube.tscn::PackedScene::6559454121913630042::1716045217::0::1::::<><>::
+::res://::1716047555
+CameraHolder.gd::GDScript::-1::1716047512::0::1::::<>Node3D<>::
+CameraHolder.tscn::PackedScene::540722988546162100::1716047512::0::1::::<><>::res://CameraHolder.gd<>uid://dwyuyh4jffipq::::res://phil_face.png
+Camera_Holder.tscn::PackedScene::5270568280654994445::1716047512::0::1::::<><>::res://CameraHolder.gd
+icon.svg::CompressedTexture2D::2223087669956469933::1716047512::1716047556::1::::<><>::
+Movement.gd::GDScript::-1::1716047512::0::1::::<>RigidBody3D<>::
+node_3d.tscn::PackedScene::2341984395447667640::1716047512::0::1::::<><>::uid://cgpu1mdk0v8tp::::res://Physics_Cube.tscn<>uid://4rchtdy7qffx::::res://Player.tscn<>uid://c0ppisg4me6c1::::res://Terrain Cube.tscn
+phil_body.png::CompressedTexture2D::7947212607289478888::1716047512::1716047512::1::::<><>::
+phil_face.png::CompressedTexture2D::8754219289001082886::1716047512::1716047512::1::::<><>::
+Physics_Cube.tscn::PackedScene::5226201501425391441::1716047512::0::1::::<><>::
+Player.tscn::PackedScene::2070705825576736277::1716047512::0::1::::<><>::res://Movement.gd<>uid://dlhxovx610utk::::res://phil_body.png<>uid://hx6vmxkr1agi::::res://CameraHolder.tscn
+Terrain Cube.tscn::PackedScene::6559454121913630042::1716047512::0::1::::<><>::
