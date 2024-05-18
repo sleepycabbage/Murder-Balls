@@ -1,8 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://4rchtdy7qffx"]
+[gd_scene load_steps=9 format=3 uid="uid://4rchtdy7qffx"]
 
 [ext_resource type="Script" path="res://Movement.gd" id="1_fxe74"]
 [ext_resource type="Texture2D" uid="uid://dlhxovx610utk" path="res://phil_body.png" id="2_gb16y"]
 [ext_resource type="PackedScene" uid="uid://hx6vmxkr1agi" path="res://CameraHolder.tscn" id="2_pgxj6"]
+[ext_resource type="PackedScene" uid="uid://bfql3jfbhv4g" path="res://phil face.tscn" id="4_1t3nf"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_eufuu"]
 bounce = 0.71
@@ -24,13 +25,14 @@ proximity_fade_distance = 0.0
 
 [node name="Player" type="Node3D"]
 
-[node name="Player" type="RigidBody3D" parent="." node_paths=PackedStringArray("cameraHolder")]
-transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 0.403065, 0)
+[node name="Player" type="RigidBody3D" parent="." node_paths=PackedStringArray("cameraHolder", "face")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 0, 0)
 collision_layer = 2
 physics_material_override = SubResource("PhysicsMaterial_eufuu")
 gravity_scale = 3.0
 script = ExtResource("1_fxe74")
 cameraHolder = NodePath("../CameraHolder")
+face = NodePath("Face")
 
 [node name="Collider" type="CollisionShape3D" parent="Player"]
 shape = SubResource("SphereShape3D_wj73p")
@@ -40,5 +42,9 @@ mesh = SubResource("SphereMesh_pnrsi")
 surface_material_override/0 = SubResource("StandardMaterial3D_odgib")
 
 [node name="GroundDetector" type="RayCast3D" parent="Player"]
+
+[node name="Face" parent="Player" instance=ExtResource("4_1t3nf")]
+transform = Transform3D(-3.64261e-08, 0, 0.833333, 0, 0.833333, 0, -0.833333, 0, -3.64261e-08, 0.5, 0, 0)
+skeleton = NodePath("../..")
 
 [node name="CameraHolder" parent="." instance=ExtResource("2_pgxj6")]

@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://8mqe118jo4iu"]
+[gd_scene load_steps=5 format=3 uid="uid://8mqe118jo4iu"]
 
 [ext_resource type="PackedScene" uid="uid://cgpu1mdk0v8tp" path="res://Physics_Cube.tscn" id="1_m8kq3"]
 [ext_resource type="PackedScene" uid="uid://4rchtdy7qffx" path="res://Player.tscn" id="2_s0xqx"]
 [ext_resource type="PackedScene" uid="uid://c0ppisg4me6c1" path="res://Terrain Cube.tscn" id="3_2rw6w"]
+[ext_resource type="AudioStream" uid="uid://sx7tii38i446" path="res://3 b side.ogg" id="4_e0u7i"]
 
 [node name="Node3D" type="Node3D"]
 
@@ -27,7 +28,11 @@ transform = Transform3D(1.10916, 0, 0, 0, 49.5447, 0, 0, 0, -0.0112323, 0, 0.128
 transform = Transform3D(1.23023, 0, 0, 0, 46.6831, 0, 0, 0, 0.000126165, 0, 1.00814, -22.6414)
 
 [node name="RigidBody3D4" parent="." instance=ExtResource("3_2rw6w")]
-transform = Transform3D(-0.00625278, 0, -0.0112321, 0, 49.5447, 0, -1.10914, 0, 6.33212e-05, 22.6674, 0.128712, -0.101409)
+transform = Transform3D(-0.00580756, 44.5299, -0.00492384, -4.25069e-08, 21.719, 0.0100955, -1.10914, -0.233163, 2.57812e-05, 22.6674, 0.128712, -0.101409)
 
 [node name="RigidBody3D5" parent="." instance=ExtResource("3_2rw6w")]
-transform = Transform3D(-0.0069353, 0, 0.000126163, 0, 46.6831, 0, -1.23021, 0, -7.11243e-07, -22.6674, 1.00814, 0.154166)
+transform = Transform3D(-0.00303305, -41.982, 5.51756e-05, -0.0062369, 20.4162, 0.000113458, -1.23021, 0, -7.11243e-07, -22.6674, 1.00814, 0.154166)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_e0u7i")
+autoplay = true

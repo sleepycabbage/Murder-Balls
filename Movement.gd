@@ -2,6 +2,8 @@ extends RigidBody3D
 
 @export var cameraHolder : Node3D
 
+@export var face : Node3D
+
 @onready var groundDetector = $GroundDetector
 
 const movementSpeed=30
