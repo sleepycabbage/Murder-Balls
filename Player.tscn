@@ -20,6 +20,7 @@ normal_scale = 8.91
 anisotropy = 1.0
 heightmap_scale = -16.0
 uv1_scale = Vector3(3, 2, 1)
+texture_filter = 0
 grow_amount = 0.095
 proximity_fade_distance = 0.0
 

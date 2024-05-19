@@ -5,8 +5,12 @@
 [sub_resource type="BoxShape3D" id="BoxShape3D_spoty"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ilq4w"]
+specular_mode = 1
+albedo_color = Color(0.936956, 0.865215, 0.974806, 1)
 albedo_texture = ExtResource("1_pu14v")
-uv1_scale = Vector3(3, 2, 1)
+metallic_specular = 0.0
+uv1_scale = Vector3(16, 16, 16)
+texture_filter = 0
 
 [node name="terrain wall" type="RigidBody3D"]
 freeze = true
