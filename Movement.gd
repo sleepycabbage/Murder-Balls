@@ -50,6 +50,10 @@ func _physics_process(delta):
 		angular_velocity.z=clamp(angular_velocity.z,-movementSpeed,movementSpeed)
 		angular_velocity.x=clamp(angular_velocity.x,-movementSpeed,movementSpeed)
 	
+	if(position.y<-300):
+		position=Vector3(0,3,0)
+		linear_velocity=Vector3(0,0,0)
+	
 	
 	groundDetector.global_rotation=Vector3.ZERO
 	pass

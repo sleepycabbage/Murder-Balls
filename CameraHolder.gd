@@ -3,7 +3,7 @@ extends Node3D
 const SENSITIVITY = 0.01
 
 const DEFAULTDISTANCE=3
-const WALLCAMERAOFFSET = 0.1
+const WALLCAMERAOFFSET = 0.5
 
 var distance=DEFAULTDISTANCE
 
@@ -26,8 +26,6 @@ func _unhandled_input(event):
 func _physics_process(delta):
 	distance=DEFAULTDISTANCE
 	raycast.target_position.z = distance
-	raycast.target_position.z = distance
-	#raycast.position.z=distance
 	if (raycast.is_colliding()):
 		distance = (raycast.global_position - raycast.get_collision_point()).length() - WALLCAMERAOFFSET
 	camera.position.z = distance
