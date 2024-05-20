@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=3 uid="uid://4rchtdy7qffx"]
 
 [ext_resource type="Script" path="res://Movement.gd" id="1_fxe74"]
-[ext_resource type="Texture2D" uid="uid://dlhxovx610utk" path="res://phil_body.png" id="2_gb16y"]
+[ext_resource type="Texture2D" uid="uid://dlhxovx610utk" path="res://Character sprites/phil_body.png" id="2_gb16y"]
 [ext_resource type="PackedScene" uid="uid://hx6vmxkr1agi" path="res://CameraHolder.tscn" id="2_pgxj6"]
 [ext_resource type="PackedScene" uid="uid://bfql3jfbhv4g" path="res://phil face.tscn" id="4_1t3nf"]
 

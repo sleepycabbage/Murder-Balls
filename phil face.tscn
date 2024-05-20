@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://bfql3jfbhv4g"]
 
-[ext_resource type="Texture2D" uid="uid://dwyuyh4jffipq" path="res://phil_face.png" id="1_6q2fs"]
+[ext_resource type="Texture2D" uid="uid://dwyuyh4jffipq" path="res://Character sprites/phil_face.png" id="1_6q2fs"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_ifkwl"]
 

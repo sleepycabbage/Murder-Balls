@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dlhxovx610utk"
-path="res://.godot/imported/phil_body.png-f45acf757cf8cbcb20a52836fc30889d.ctex"
+uid="uid://52eskb3fv3x2"
+path="res://.godot/imported/dog.png-4ac2c1888e6e1b58834bed11c2416553.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://phil_body.png"
-dest_files=["res://.godot/imported/phil_body.png-f45acf757cf8cbcb20a52836fc30889d.ctex"]
+source_file="res://Character sprites/dog.png"
+dest_files=["res://.godot/imported/dog.png-4ac2c1888e6e1b58834bed11c2416553.ctex"]
 
 [params]
 
@@ -25,10 +25,10 @@ mipmaps/generate=false
 mipmaps/limit=-1
 roughness/mode=0
 roughness/src_normal=""
-process/fix_alpha_border=false
+process/fix_alpha_border=true
 process/premult_alpha=false
 process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=0
+detect_3d/compress_to=1
