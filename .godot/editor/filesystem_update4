@@ -3,3 +3,9 @@ res://node_3d.tscn
 res://phil face.tscn
 res://Terrain Cube.tscn
 res://Movement.gd
+res://Map 1.tscn
+res://Main Menu.tscn
+res://menu.tscn
+res://Button.gd
+res://menu.gd
+res://maps/Map 1.tscn

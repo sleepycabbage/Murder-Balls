@@ -1,5 +1,9 @@
+Camera3D
+Control
+Button
+Node2D
+MenuButton
 MeshInstance3D
 AudioStreamPlayer
 CollisionShape3D
-Camera3D
 Node3D

@@ -1,52 +1,48 @@
-[gd_scene load_steps=4 format=3 uid="uid://8mqe118jo4iu"]
+[gd_scene load_steps=3 format=3 uid="uid://8mqe118jo4iu"]
 
-[ext_resource type="PackedScene" uid="uid://4rchtdy7qffx" path="res://Player.tscn" id="2_s0xqx"]
-[ext_resource type="PackedScene" uid="uid://c0ppisg4me6c1" path="res://Terrain Cube.tscn" id="3_2rw6w"]
-[ext_resource type="AudioStream" uid="uid://sx7tii38i446" path="res://3 b side.ogg" id="4_e0u7i"]
+[ext_resource type="PackedScene" uid="uid://c0ppisg4me6c1" path="res://Terrain Cube.tscn" id="1_rhjgj"]
+[ext_resource type="AudioStream" uid="uid://sx7tii38i446" path="res://3 b side.ogg" id="2_np4gp"]
 
-[node name="Node3D" type="Node3D"]
+[node name="map" type="Node3D"]
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.972529, 0.232783, 0, -0.232783, 0.972529, 0, 13.2731, 0)
 
-[node name="Player" parent="." instance=ExtResource("2_s0xqx")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+[node name="RigidBody3D" parent="." instance=ExtResource("1_rhjgj")]
 
-[node name="RigidBody3D" parent="." instance=ExtResource("3_2rw6w")]
-
-[node name="RigidBody3D2" parent="." instance=ExtResource("3_2rw6w")]
+[node name="RigidBody3D2" parent="." instance=ExtResource("1_rhjgj")]
 transform = Transform3D(1.10916, 0, 0, 0, 49.5447, 0, 0, 0, -0.0112323, 0, 0.128712, 22.6941)
 
-[node name="RigidBody3D3" parent="." instance=ExtResource("3_2rw6w")]
+[node name="RigidBody3D3" parent="." instance=ExtResource("1_rhjgj")]
 transform = Transform3D(1.23023, 0, 0, 0, 46.6831, 0, 0, 0, 0.000126165, 0, 1.00814, -22.6414)
 
-[node name="RigidBody3D4" parent="." instance=ExtResource("3_2rw6w")]
+[node name="RigidBody3D4" parent="." instance=ExtResource("1_rhjgj")]
 transform = Transform3D(-0.00580756, 44.5299, -0.00492384, -4.25069e-08, 21.719, 0.0100955, -1.10914, -0.233163, 2.57812e-05, 22.6674, 0.128712, -0.101409)
 
-[node name="RigidBody3D5" parent="." instance=ExtResource("3_2rw6w")]
+[node name="RigidBody3D5" parent="." instance=ExtResource("1_rhjgj")]
 transform = Transform3D(-0.00303305, -41.982, 5.51756e-05, -0.0062369, 20.4162, 0.000113458, -1.23021, 0, -7.11243e-07, -22.6674, 1.00814, 0.154166)
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("4_e0u7i")
+stream = ExtResource("2_np4gp")
 autoplay = true
 
-[node name="terrain wall" parent="." instance=ExtResource("3_2rw6w")]
+[node name="terrain wall" parent="." instance=ExtResource("1_rhjgj")]
 transform = Transform3D(0.150346, 0.220391, 0, -0.0339701, 0.975412, 0, 0, 0, 0.372566, -8.19136, 0.5, -4.47131)
 
-[node name="terrain wall2" parent="." instance=ExtResource("3_2rw6w")]
+[node name="terrain wall2" parent="." instance=ExtResource("1_rhjgj")]
 transform = Transform3D(0.152456, -0.14724, 0, 0.0226949, 0.989101, 0, 0, 0, 0.372566, -18.1028, 0.892712, -4.47209)
 
-[node name="terrain wall3" parent="." instance=ExtResource("3_2rw6w")]
+[node name="terrain wall3" parent="." instance=ExtResource("1_rhjgj")]
 transform = Transform3D(0.21467, -1.99868, 0, 0.0319562, 13.4264, 0, 0, 0, 0.0146697, -2.3167, -0.261872, 13.361)
 
-[node name="terrain wall4" parent="." instance=ExtResource("3_2rw6w")]
+[node name="terrain wall4" parent="." instance=ExtResource("1_rhjgj")]
 transform = Transform3D(0.213078, 1.68595, 0.0021111, -0.0383771, 11.8716, 0.00662373, -0.0151441, -6.36282, 0.0129178, 9.18134, -0.261872, -14.3332)
 
-[node name="terrain wall5" parent="." instance=ExtResource("3_2rw6w")]
+[node name="terrain wall5" parent="." instance=ExtResource("1_rhjgj")]
 transform = Transform3D(-0.0156122, 4.2685, 0.0110451, -0.0225034, 39.1281, -0.00135283, -0.152435, -6.21349, -0.000931509, 2.99134, -4.02447, -2.29372)
 
-[node name="terrain wall6" parent="." instance=ExtResource("3_2rw6w")]
+[node name="terrain wall6" parent="." instance=ExtResource("1_rhjgj")]
 transform = Transform3D(0.101295, 0.148488, 0.275312, -0.0255958, 0.984836, -0.0187072, -0.113322, -0.0897138, 0.250318, 20.0727, 0.773446, 0.761298)
 
-[node name="terrain wall7" parent="." instance=ExtResource("3_2rw6w")]
+[node name="terrain wall7" parent="." instance=ExtResource("1_rhjgj")]
 transform = Transform3D(0.102717, -0.0992024, 0.275312, 0.0310278, 0.978242, -0.0187072, -0.110654, 0.182216, 0.250318, 13.3943, 0.619266, 8.0938)
