@@ -46,9 +46,6 @@ func _physics_process(delta):
 	#get the actual direction lol
 	var direction = (cameraHolder.global_basis * Vector3(inputDirection.x,0,inputDirection.y)).normalized()
 	
-	$MeshInstance3D.global_rotation = Vector3.ZERO
-	$MeshInstance3D.global_position = global_position + direction
-	
 	#because torque is different
 	direction = direction.rotated(Vector3.UP,PI/2.0)
 	
