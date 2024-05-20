@@ -34,6 +34,7 @@ gravity_scale = 3.0
 script = ExtResource("1_fxe74")
 cameraHolder = NodePath("../CameraHolder")
 face = NodePath("Face")
+quickTurn = true
 
 [node name="Collider" type="CollisionShape3D" parent="Player"]
 shape = SubResource("SphereShape3D_wj73p")
@@ -49,3 +50,4 @@ transform = Transform3D(-3.64261e-08, 0, 0.833333, 0, 0.833333, 0, -0.833333, 0,
 skeleton = NodePath("../..")
 
 [node name="CameraHolder" parent="." instance=ExtResource("2_pgxj6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)

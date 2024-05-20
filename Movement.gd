@@ -47,14 +47,16 @@ func _physics_process(delta):
 	var direction = (cameraHolder.transform.basis * Vector3(inputDirection.x,0,inputDirection.y)).normalized()
 	
 	#movement uwu
-	if direction:
+	if direction != Vector3.ZERO:
 		angular_velocity.z+=-direction.x*delta*ACCELERATION
 		angular_velocity.x+=direction.z*delta*ACCELERATION
+		
 		if(quickTurn):
 			if(-sign(direction.x)!=sign(angular_velocity.z)):
 				angular_velocity.z=sign(-direction.x)*abs(angular_velocity.z)*TURNAROUNDMULTIPLIER
 			if(sign(direction.z)!=sign(angular_velocity.x)):
 				angular_velocity.x=sign(direction.z)*abs(angular_velocity.x)*TURNAROUNDMULTIPLIER
+		
 		angular_velocity.z=clamp(angular_velocity.z,-movementSpeed,movementSpeed)
 		angular_velocity.x=clamp(angular_velocity.x,-movementSpeed,movementSpeed)
 	
