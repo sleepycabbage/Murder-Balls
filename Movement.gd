@@ -24,22 +24,29 @@ const jumpForce=10
 
 var coyoteTime=0
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta):
+	#detect if we're on the ground
 	groundDetector.global_rotation=Vector3.ZERO
 	var onGround=groundDetector.is_colliding()
+	#reduce coyote time
 	coyoteTime-=delta*60
+	#if we're on the ground, set coyote time to the max
 	if onGround:
 		coyoteTime=maxCoyoteTime
+	#jumping
 	if coyoteTime>0:
 		if Input.is_action_just_pressed("Jump"):
 			linear_velocity.y=jumpForce
 			coyoteTime=0
+	#set the camera's position to our position
 	cameraHolder.position=position
 	
+	#get our input direction
 	var inputDirection=Input.get_vector("Left","Right","Forward","Backward")
+	#get the actual direction lol
 	var direction = (cameraHolder.transform.basis * Vector3(inputDirection.x,0,inputDirection.y)).normalized()
 	
+	#movement uwu
 	if direction:
 		angular_velocity.z+=-direction.x*delta*ACCELERATION
 		angular_velocity.x+=direction.z*delta*ACCELERATION
@@ -51,10 +58,8 @@ func _physics_process(delta):
 		angular_velocity.z=clamp(angular_velocity.z,-movementSpeed,movementSpeed)
 		angular_velocity.x=clamp(angular_velocity.x,-movementSpeed,movementSpeed)
 	
+	# if we're below y -300 set us back to spawn with no speed
 	if(position.y<-300):
 		position=Vector3(0,3,0)
 		linear_velocity=Vector3(0,0,0)
-	
-	
-	groundDetector.global_rotation=Vector3.ZERO
 	pass
