@@ -1,1 +1,5 @@
 res://node_3d.tscn
+res://Player.tscn
+res://phil face.tscn
+res://Terrain Cube.tscn
+res://Movement.gd

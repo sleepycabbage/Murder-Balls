@@ -4,6 +4,8 @@ extends RigidBody3D
 
 @export var face : Node3D
 
+@export var quickTurn : bool
+
 @onready var groundDetector = $GroundDetector
 
 const movementSpeed=30
@@ -40,13 +42,12 @@ func _physics_process(delta):
 	
 	if direction:
 		angular_velocity.z+=-direction.x*delta*ACCELERATION
-		# quick turns
-		if(-sign(direction.x)!=sign(angular_velocity.z)):
-			angular_velocity.z=sign(-direction.x)*abs(angular_velocity.z)*TURNAROUNDMULTIPLIER
 		angular_velocity.x+=direction.z*delta*ACCELERATION
-		# quick turns
-		if(sign(direction.z)!=sign(angular_velocity.x)):
-			angular_velocity.x=sign(direction.z)*abs(angular_velocity.x)*TURNAROUNDMULTIPLIER
+		if(quickTurn):
+			if(-sign(direction.x)!=sign(angular_velocity.z)):
+				angular_velocity.z=sign(-direction.x)*abs(angular_velocity.z)*TURNAROUNDMULTIPLIER
+			if(sign(direction.z)!=sign(angular_velocity.x)):
+				angular_velocity.x=sign(direction.z)*abs(angular_velocity.x)*TURNAROUNDMULTIPLIER
 		angular_velocity.z=clamp(angular_velocity.z,-movementSpeed,movementSpeed)
 		angular_velocity.x=clamp(angular_velocity.x,-movementSpeed,movementSpeed)
 	
