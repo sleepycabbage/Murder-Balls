@@ -52,3 +52,14 @@ skeleton = NodePath("../..")
 
 [node name="CameraHolder" parent="." instance=ExtResource("2_pgxj6")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Panel" type="Panel" parent="Control"]
+layout_mode = 0
+offset_right = 688.0
+offset_bottom = 162.0

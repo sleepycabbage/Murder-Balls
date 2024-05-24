@@ -1,26 +1,26 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1716256603
-3 b side.ogg::AudioStreamOggVorbis::1312857181542554045::1716073791::1716073791::1::::<><>::
-Button.gd::GDScript::-1::1716241680::0::1::::<>RefCounted<>::
-CameraHolder.gd::GDScript::-1::1716079529::0::1::::<>Node3D<>::
-CameraHolder.tscn::PackedScene::540722988546162100::1716144507::0::1::::<><>::res://CameraHolder.gd
-Camera_Holder.tscn::PackedScene::5270568280654994445::1715993024::0::1::::<><>::res://CameraHolder.gd
-export_presets.cfg::TextFile::-1::1716146236::0::1::::<><>::
-ground_1.png::CompressedTexture2D::7587695674666882782::1716051551::1716051690::1::::<><>::
-icon.svg::CompressedTexture2D::2223087669956469933::1715910275::1716256604::1::::<><>::
-Main Menu.tscn::PackedScene::6642069984904217619::1716241680::0::1::::<><>::uid://7mj5boijctld::::res://menu.tscn
-menu.gd::GDScript::-1::1716241680::0::1::::<>Control<>::
-menu.tscn::PackedScene::2271415630744021989::1716241680::0::1::::<><>::uid://dlhxovx610utk::::res://Character sprites/phil_body.png<>res://menu.gd
-Movement.gd::GDScript::-1::1716241680::0::1::::<>RigidBody3D<>::
-phil face.tscn::PackedScene::81503332811406172::1716241680::0::1::::<><>::uid://dwyuyh4jffipq::::res://Character sprites/phil_face.png
-Physics_Cube.tscn::PackedScene::5226201501425391441::1715995234::0::1::::<><>::
-Player.tscn::PackedScene::2070705825576736277::1716241680::0::1::::<><>::res://Movement.gd<>uid://dlhxovx610utk::::res://Character sprites/phil_body.png<>uid://hx6vmxkr1agi::::res://CameraHolder.tscn<>uid://bfql3jfbhv4g::::res://phil face.tscn
-Terrain Cube.tscn::PackedScene::6559454121913630042::1716163558::0::1::::<><>::uid://dgdsieq7i7o6i::::res://ground_1.png
-::res://Character sprites/::1716241680
-dog.png::CompressedTexture2D::2161679048819977425::1716241680::1716241680::1::::<><>::
-dogface.png::CompressedTexture2D::9126886335010383792::1716241680::1716241680::1::::<><>::
-phil_body.png::CompressedTexture2D::7947212607289478888::1716241680::1716241680::1::::<><>::
-phil_face.png::CompressedTexture2D::8754219289001082886::1716241680::1716241680::1::::<><>::
-::res://maps/::1716241680
-Map 1.gd::GDScript::-1::1716241680::0::1::::<>Node3D<>::
-Map 1.tscn::PackedScene::2341984395447667640::1716241680::0::1::::<><>::uid://c0ppisg4me6c1::::res://Terrain Cube.tscn<>res://maps/Map 1.gd<>uid://sx7tii38i446::::res://3 b side.ogg
+::res://::1716571670
+3 b side.ogg::AudioStreamOggVorbis::1312857181542554045::1716219286::1716219286::1::::<><>::
+Button.gd::GDScript::-1::1716222705::0::1::::<>RefCounted<>::
+CameraHolder.gd::GDScript::-1::1716219286::0::1::::<>Node3D<>::
+CameraHolder.tscn::PackedScene::540722988546162100::1716482093::0::1::::<><>::res://CameraHolder.gd
+Camera_Holder.tscn::PackedScene::5270568280654994445::1716219286::0::1::::<><>::res://CameraHolder.gd
+export_presets.cfg::TextFile::-1::1716219286::0::1::::<><>::
+ground_1.png::CompressedTexture2D::7587695674666882782::1716219286::1716219286::1::::<><>::
+icon.svg::CompressedTexture2D::2223087669956469933::1716219286::1716571670::1::::<><>::
+Main Menu.tscn::PackedScene::6642069984904217619::1716224242::0::1::::<><>::uid://7mj5boijctld::::res://menu.tscn
+menu.gd::GDScript::-1::1716224024::0::1::::<>Control<>::
+menu.tscn::PackedScene::2271415630744021989::1716224874::0::1::::<><>::uid://dlhxovx610utk::::res://Character sprites/phil_body.png<>res://menu.gd
+Movement.gd::GDScript::-1::1716224309::0::1::::<>RigidBody3D<>::
+phil face.tscn::PackedScene::81503332811406172::1716224879::0::1::::<><>::uid://dwyuyh4jffipq::::res://Character sprites/phil_face.png
+Physics_Cube.tscn::PackedScene::5226201501425391441::1716219286::0::1::::<><>::
+Player.tscn::PackedScene::2070705825576736277::1716482024::0::1::::<><>::res://Movement.gd<>uid://dlhxovx610utk::::res://Character sprites/phil_body.png<>uid://hx6vmxkr1agi::::res://CameraHolder.tscn<>uid://bfql3jfbhv4g::::res://phil face.tscn
+Terrain Cube.tscn::PackedScene::6559454121913630042::1716221942::0::1::::<><>::uid://dgdsieq7i7o6i::::res://ground_1.png
+::res://Character sprites/::1716224884
+dog.png::CompressedTexture2D::2161679048819977425::1716224884::1716224884::1::::<><>::
+dogface.png::CompressedTexture2D::9126886335010383792::1716224884::1716224884::1::::<><>::
+phil_body.png::CompressedTexture2D::7947212607289478888::1716219286::1716224875::1::::<><>::
+phil_face.png::CompressedTexture2D::8754219289001082886::1716219286::1716224880::1::::<><>::
+::res://maps/::1716482024
+Map 1.gd::GDScript::-1::1716224242::0::1::::<>Node3D<>::
+Map 1.tscn::PackedScene::2341984395447667640::1716482024::0::1::::<><>::uid://c0ppisg4me6c1::::res://Terrain Cube.tscn<>res://maps/Map 1.gd<>uid://sx7tii38i446::::res://3 b side.ogg

@@ -1,2 +1,4 @@
 res://maps/Map 1.tscn
 res://Player.tscn
+res://CameraHolder.tscn
+res://UIHealthBar.tscn

@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://b8eflrhtq6ig6"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="bgPanel" type="Panel" parent="."]
+layout_mode = 0
+offset_right = 688.0
+offset_bottom = 162.0
+
+[node name="healthPanel" type="Panel" parent="."]
+layout_mode = 0
+offset_right = 688.0
+offset_bottom = 162.0
