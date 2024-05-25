@@ -37,7 +37,6 @@ angular_damp = 0.2
 script = ExtResource("1_fxe74")
 cameraHolder = NodePath("../CameraHolder")
 face = NodePath("Face")
-quickTurn = null
 maxHealth = 100.0
 
 [node name="Collider" type="CollisionShape3D" parent="Player"]

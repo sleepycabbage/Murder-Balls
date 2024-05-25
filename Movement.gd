@@ -31,7 +31,9 @@ var coyoteTime=0
 var localHealth=maxHealth
 
 func _physics_process(delta):
-	healthBar.
+	localHealth-=0.01
+	var healthBarTransform=healthBar.get_transform()
+	healthBarTransform.size.x-=0.1
 	#detect if we're on the ground
 	groundDetector.global_rotation=Vector3.ZERO
 	var onGround=groundDetector.is_colliding()

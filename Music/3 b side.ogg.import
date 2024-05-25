@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://sx7tii38i446"
+path="res://.godot/imported/3 b side.ogg-0281268e3e335cf415d37f20797562bd.oggvorbisstr"
+
+[deps]
+
+source_file="res://Music/3 b side.ogg"
+dest_files=["res://.godot/imported/3 b side.ogg-0281268e3e335cf415d37f20797562bd.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

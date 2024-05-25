@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://c0ppisg4me6c1" path="res://Terrain Cube.tscn" id="1_rhjgj"]
 [ext_resource type="Script" path="res://maps/Map 1.gd" id="1_y5jf2"]
-[ext_resource type="AudioStream" uid="uid://sx7tii38i446" path="res://3 b side.ogg" id="2_np4gp"]
+[ext_resource type="AudioStream" uid="uid://bmtahi1dwskmg" path="res://Music/Funky Radio.mp3" id="3_j3yye"]
 
 [node name="map" type="Node3D"]
 script = ExtResource("1_y5jf2")
@@ -25,7 +25,7 @@ transform = Transform3D(-0.00580756, 44.5299, -0.00492384, -4.25069e-08, 21.719,
 transform = Transform3D(-0.00303305, -41.982, 5.51756e-05, -0.0062369, 20.4162, 0.000113458, -1.23021, 0, -7.11243e-07, -22.6674, 1.00814, 0.154166)
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("2_np4gp")
+stream = ExtResource("3_j3yye")
 autoplay = true
 
 [node name="terrain wall" parent="." instance=ExtResource("1_rhjgj")]

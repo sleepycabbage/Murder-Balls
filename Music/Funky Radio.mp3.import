@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bmtahi1dwskmg"
+path="res://.godot/imported/Funky Radio.mp3-b049c2644d21c2aa673134e577f1a057.mp3str"
+
+[deps]
+
+source_file="res://Music/Funky Radio.mp3"
+dest_files=["res://.godot/imported/Funky Radio.mp3-b049c2644d21c2aa673134e577f1a057.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
