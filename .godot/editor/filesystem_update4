@@ -1,4 +1,5 @@
-res://maps/Map 1.tscn
-res://Player.tscn
-res://CameraHolder.tscn
 res://UIHealthBar.tscn
+res://Player.tscn
+res://Movement.gd
+res://maps/Map 1.tscn
+res://UIHealthBar.gd

@@ -5,13 +5,15 @@ layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
+scale = Vector2(0.456681, 0.314607)
 
-[node name="bgPanel" type="Panel" parent="."]
+[node name="HealthBackground" type="ColorRect" parent="."]
 layout_mode = 0
-offset_right = 688.0
-offset_bottom = 162.0
+offset_right = 685.0
+offset_bottom = 161.0
 
-[node name="healthPanel" type="Panel" parent="."]
+[node name="HealthDisplay" type="ColorRect" parent="."]
 layout_mode = 0
-offset_right = 688.0
-offset_bottom = 162.0
+offset_right = 685.0
+offset_bottom = 161.0
+color = Color(0.837199, 0, 0.173176, 1)

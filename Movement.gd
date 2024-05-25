@@ -8,6 +8,8 @@ extends RigidBody3D
 
 @onready var groundDetector = $GroundDetector
 
+@onready var healthBar = $Control/HealthDisplay
+
 const movementSpeed=30
 
 const ACCELERATION = 400
@@ -24,12 +26,18 @@ const jumpForce=10
 
 var coyoteTime=0
 
+@export var maxHealth : float
+
+var localHealth=maxHealth
+
 func _physics_process(delta):
+	healthBar.
 	#detect if we're on the ground
 	groundDetector.global_rotation=Vector3.ZERO
 	var onGround=groundDetector.is_colliding()
 	#reduce coyote time
 	coyoteTime-=delta*60
+	
 	#if we're on the ground, set coyote time to the max
 	if onGround:
 		coyoteTime=maxCoyoteTime
