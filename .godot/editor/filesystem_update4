@@ -1,6 +1,5 @@
+res://maps/Map 1.tscn
+res://Movement.gd
+res://Main Menu.tscn
 res://UIHealthBar.tscn
 res://Player.tscn
-res://Movement.gd
-res://maps/Map 1.tscn
-res://UIHealthBar.gd
-res://Main Menu.tscn
