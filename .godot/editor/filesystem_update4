@@ -3,3 +3,4 @@ res://maps/Map 1.tscn
 res://UIHealthBar.tscn
 res://Player.tscn
 res://CameraHolder.gd
+res://Movement.gd

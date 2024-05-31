@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://b8eflrhtq6ig6" path="res://UIHealthBar.tscn" id="5_kae3h"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_eufuu"]
-bounce = 0.71
+bounce = 0.62
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_wj73p"]
 
@@ -33,7 +33,7 @@ collision_layer = 2
 physics_material_override = SubResource("PhysicsMaterial_eufuu")
 gravity_scale = 3.0
 linear_damp = 0.2
-angular_damp = 0.5
+angular_damp = 0.2
 script = ExtResource("1_fxe74")
 cameraHolder = NodePath("../CameraHolder")
 face = NodePath("Face")
