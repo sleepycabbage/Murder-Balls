@@ -21,7 +21,7 @@ func _unhandled_input(event):
 	if(event is InputEventMouseMotion):
 		rotate_y(-event.relative.x * SENSITIVITY)
 		neck.rotate_x(-event.relative.y * SENSITIVITY)
-		neck.rotation.x = clamp(neck.rotation.x, deg_to_rad(-40),deg_to_rad(60))
+		neck.rotation.x = clamp(neck.rotation.x, deg_to_rad(-90),deg_to_rad(60))
 
 func _physics_process(delta):
 	distance=DEFAULTDISTANCE
