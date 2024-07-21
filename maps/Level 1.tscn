@@ -11,6 +11,8 @@
 [node name="map" type="Node3D"]
 transform = Transform3D(1.00019, 0, 0, 0, 1.00019, 0, 0, 0, 1.00019, 0, 0, 0)
 script = ExtResource("1_nbf12")
+timeUntilPlayerStarts = null
+timeUntilPlayerLeaves = null
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, -0.173648, 0.984808, 0, -0.984808, -0.173648, 0, 61.4632, 0)
@@ -57,7 +59,7 @@ transform = Transform3D(0.384892, 0, 0, 0, 0.741006, 0, 0, 0, 0.0915551, -91.178
 transform = Transform3D(-2.44028e-09, -0.283522, 0, 0.0558271, -1.23932e-08, 0, 0, 0, 0.0915551, -106.147, 0.54219, 0.0282257)
 
 [node name="RigidBody3D6" parent="Walls" instance=ExtResource("2_lejsg")]
-transform = Transform3D(0.161283, 0, 0, 0, 0.741006, 0, 0, 0, 0.213825, -93.0614, -10.213, -0.00389502)
+transform = Transform3D(0.286142, 0, 0, 0, 0.741006, 0, 0, 0, 0.213825, -97.2811, -10.213, -0.00389502)
 
 [node name="RigidBody3D13" parent="Walls" instance=ExtResource("2_lejsg")]
 transform = Transform3D(0.00563566, 0, 0, 0, 12.9551, 0, 0, 0, 0.213825, -87.4521, -7.73005, -0.00389502)
@@ -72,3 +74,4 @@ transform = Transform3D(95164.9, 0, 0, 0, 0.555162, 0, 0, 0, 35413.8, 0, -17.887
 transform = Transform3D(0.999999, 0, 0, 0, 0.999999, 0, 0, 0, 0.999999, -91.831, -9.80079, 0)
 
 [node name="Player" parent="." instance=ExtResource("7_a2w8f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
