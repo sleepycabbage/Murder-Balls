@@ -1,6 +1,6 @@
 CollisionShape3D
-CSGBox3D
 Area3D
+CSGBox3D
 Node
 CSGCylinder3D
 RichTextLabel

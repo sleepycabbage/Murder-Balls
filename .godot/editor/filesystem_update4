@@ -1,2 +1,4 @@
 res://maps/Level 1.tscn
 res://Objects/Death_Zone.tscn
+res://maps/levelStart.gd
+res://Objects/Win_Pad.tscn

@@ -18,7 +18,6 @@ func _ready():
 	player.position.z=spawnPad.position.z
 	timer=_create_timer()
 	killZone = killZone.get_children()[0]
-	player.killZone=killZone
 	pass
 
 func _create_player():
