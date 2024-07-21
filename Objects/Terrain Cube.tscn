@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://c0ppisg4me6c1"]
 
-[ext_resource type="Texture2D" uid="uid://d0p8nao8t0x3j" path="res://ground_2.png" id="1_mg5g5"]
-[ext_resource type="Texture2D" uid="uid://dgdsieq7i7o6i" path="res://ground_1.png" id="1_pu14v"]
+[ext_resource type="Texture2D" uid="uid://d0p8nao8t0x3j" path="res://Terrain Sprites/ground_2.png" id="1_mg5g5"]
+[ext_resource type="Texture2D" uid="uid://dgdsieq7i7o6i" path="res://Terrain Sprites/ground_1.png" id="1_pu14v"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_spoty"]
 
@@ -9,6 +9,7 @@
 albedo_texture = ExtResource("1_mg5g5")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ilq4w"]
+shading_mode = 2
 specular_mode = 1
 albedo_color = Color(0.936956, 0.865215, 0.974806, 1)
 albedo_texture = ExtResource("1_pu14v")

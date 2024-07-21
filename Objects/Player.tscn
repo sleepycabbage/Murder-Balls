@@ -1,9 +1,9 @@
 [gd_scene load_steps=10 format=3 uid="uid://4rchtdy7qffx"]
 
-[ext_resource type="Script" path="res://Movement.gd" id="1_cx16j"]
+[ext_resource type="Script" path="res://Objects/Movement.gd" id="1_cx16j"]
 [ext_resource type="Texture2D" uid="uid://dlhxovx610utk" path="res://Character sprites/phil_body.png" id="2_mdo0f"]
 [ext_resource type="PackedScene" uid="uid://bfql3jfbhv4g" path="res://Objects/phil face.tscn" id="3_o28hp"]
-[ext_resource type="PackedScene" uid="uid://hx6vmxkr1agi" path="res://CameraHolder.tscn" id="4_ewlxt"]
+[ext_resource type="PackedScene" uid="uid://hx6vmxkr1agi" path="res://Components/CameraHolder.tscn" id="4_ewlxt"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_eufuu"]
 bounce = 0.62

@@ -14,7 +14,7 @@ buttonName = "Level 1"
 [node name="menu2" parent="." instance=ExtResource("1_kpcda")]
 offset_left = 420.0
 offset_right = 420.0
-room = "Map 1.tscn"
+room = "Level 2.tscn"
 buttonName = "Level 2"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]

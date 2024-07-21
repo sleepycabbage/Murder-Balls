@@ -44,7 +44,7 @@ func _ready():
 	pass
 
 func _create_timer():
-	var timerInstance=preload("res://UIHealthBar.tscn").instantiate()
+	var timerInstance=preload("res://Components/UIHealthBar.tscn").instantiate()
 	add_child(timerInstance)
 	return timerInstance.get_children()[0]
 

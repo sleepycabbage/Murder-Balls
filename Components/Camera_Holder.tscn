@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://chddqv58tjivl"]
 
-[ext_resource type="Script" path="res://CameraHolder.gd" id="1_0nwph"]
+[ext_resource type="Script" path="res://Components/CameraHolder.gd" id="1_0nwph"]
 
 [node name="CameraHolder" type="Node3D"]
 transform = Transform3D(1, 0, 0, 0, 0.972529, 0.232783, 0, -0.232783, 0.972529, 0, 0.978384, -1.74757)

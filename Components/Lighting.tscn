@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://dv2tsw4semmqa"]
+
+[node name="Lighting" type="Node3D"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.99981, 0, 0, 0, -0.300649, 0.953536, 0, -0.953536, -0.300649, 0, 61.4632, 0)
+shadow_enabled = true
+shadow_blur = 0.382

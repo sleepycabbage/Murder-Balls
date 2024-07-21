@@ -1,11 +1,6 @@
 res://maps/Level 1.tscn
-res://Objects/Death_Zone.tscn
+res://Objects/Terrain Cube.tscn
 res://maps/levelStart.gd
-res://Objects/Win_Pad.tscn
-res://Objects/Terrain_Half_Pipe.tscn
-res://Objects/Player.tscn
-res://Movement.gd
-res://Rooms/menu.tscn
-res://CameraHolder.tscn
-res://Rooms/menu.gd
-res://audio.tscn
+res://Rooms/Main Menu.tscn
+res://maps/Level 2.tscn
+res://Components/Lighting.tscn
