@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://dfhu6rqchldvi"]
+[gd_scene load_steps=10 format=3 uid="uid://dfhu6rqchldvi"]
 
 [ext_resource type="Script" path="res://maps/levelStart.gd" id="1_0v7yf"]
 [ext_resource type="PackedScene" uid="uid://dv2tsw4semmqa" path="res://Components/Lighting.tscn" id="2_pju03"]
@@ -6,7 +6,9 @@
 [ext_resource type="PackedScene" uid="uid://cal74r7io68wl" path="res://Objects/Spawn_Pad.tscn" id="4_6vkye"]
 [ext_resource type="PackedScene" uid="uid://c0ppisg4me6c1" path="res://Objects/Terrain Cube.tscn" id="5_7ps4h"]
 [ext_resource type="PackedScene" uid="uid://b4y5dk3twrr2k" path="res://Objects/Death_Zone.tscn" id="6_vamiq"]
+[ext_resource type="PackedScene" uid="uid://bkgnridyj2ouq" path="res://Objects/Win_Pad.tscn" id="8_0hg4s"]
 [ext_resource type="PackedScene" uid="uid://4rchtdy7qffx" path="res://Objects/Player.tscn" id="8_ftxju"]
+[ext_resource type="PackedScene" uid="uid://caysfyu4jguon" path="res://Objects/spotlight.tscn" id="9_fay6v"]
 
 [node name="map" type="Node3D"]
 transform = Transform3D(1.00019, 0, 0, 0, 1.00019, 0, 0, 0, 1.00019, 0, 0, 0)
@@ -24,19 +26,42 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
 [node name="RigidBody3D" parent="Walls" instance=ExtResource("5_7ps4h")]
 transform = Transform3D(0.42774, 0, 0, 0, 1.00019, 0, 0, 0, 0.302639, -9.81394, 0, 0)
 
+[node name="RigidBody3D6" parent="Walls" instance=ExtResource("5_7ps4h")]
+transform = Transform3D(0.42774, 0, 0, 0, 1.00019, 0, 0, 0, 0.302639, -9.81394, -16.0163, 0)
+
 [node name="RigidBody3D2" parent="Walls" instance=ExtResource("5_7ps4h")]
-transform = Transform3D(0.38985, 0.411561, 0, -0.176008, 0.911591, 0, 0, 0, 0.302639, -14.5322, -3.97985, 0)
+transform = Transform3D(0.0636379, 0, 0, 0, 1.00019, 0, 0, 0, 1.42121, -26.1629, 0, 16.691)
+
+[node name="RigidBody3D3" parent="Walls" instance=ExtResource("5_7ps4h")]
+transform = Transform3D(0.0636378, 0, 0, 0, 0.0385521, 0.186626, 0, -0.999447, 0.0071988, -26.1629, 0, 62.6586)
+
+[node name="RigidBody3D4" parent="Walls" instance=ExtResource("5_7ps4h")]
+transform = Transform3D(0.0636378, 0, 0, 0, 1.00019, 0, 0, 0, 0.494289, -26.1629, -13.6937, 47.2106)
+
+[node name="RigidBody3D5" parent="Walls" instance=ExtResource("5_7ps4h")]
+transform = Transform3D(0.0636378, 0, 0, 0, 1.00019, 0, 0, 0, 0.494289, -26.1629, -13.6937, 17.4402)
 
 [node name="RigidBody3D10" parent="Walls" instance=ExtResource("5_7ps4h")]
-transform = Transform3D(0.0157274, 0, 0, 0, 5.28518, 0, 0, 0, 0.319159, 5.03776, 0, 0)
+transform = Transform3D(0.0157274, 0, 0, 0, 36.5633, 0, 0, 0, 0.319159, 5.03776, 0, 0)
 
 [node name="RigidBody3D8" parent="Walls" instance=ExtResource("5_7ps4h")]
-transform = Transform3D(0.42774, 0, 0, 0, 5.15009, 0, 0, 0, 0.00895332, -9.81394, 0, 7.20346)
+transform = Transform3D(0.42774, 0, 0, 0, 35.6287, 0, 0, 0, 0.00895332, -9.81394, 0, 7.20346)
+
+[node name="RigidBody3D11" parent="Walls" instance=ExtResource("5_7ps4h")]
+transform = Transform3D(-1.86971e-08, 0, 0.00895332, 0, 35.6287, 0, -0.42774, 0, -3.91362e-10, -23.9441, 0, 21.3818)
+
+[node name="RigidBody3D12" parent="Walls" instance=ExtResource("5_7ps4h")]
+transform = Transform3D(-3.6879e-08, 0, 0.00895332, 0, 35.6287, 0, -0.843692, 0, -3.91362e-10, -28.4626, 0, 21.3818)
 
 [node name="RigidBody3D9" parent="Walls" instance=ExtResource("5_7ps4h")]
-transform = Transform3D(0.42774, 0, 0, 0, 5.15009, 0, 0, 0, 0.00895332, -9.81394, 0, -7.19594)
+transform = Transform3D(0.540154, 0, 0, 0, 35.6287, 0, 0, 0, 0.00895332, -10.4676, 0, -7.19594)
 
 [node name="DeathZone" parent="." instance=ExtResource("6_vamiq")]
 transform = Transform3D(95164.9, 0, 0, 0, 0.555162, 0, 0, 0, 35413.8, 0, -17.8876, 0)
 
 [node name="Player" parent="." instance=ExtResource("8_ftxju")]
+
+[node name="WinPad" parent="." instance=ExtResource("8_0hg4s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.52826, -15.2899, 0.0290939)
+
+[node name="spotlight" parent="." instance=ExtResource("9_fay6v")]

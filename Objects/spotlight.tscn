@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://caysfyu4jguon"]
+
+[node name="spotlight" type="SpotLight3D"]
+transform = Transform3D(0.99981, 0, 0, 0, -0.123232, 0.992186, 0, -0.992186, -0.123232, 0, -1.1222, 0)
+light_energy = 6.181
+shadow_enabled = true
+spot_range = 4096.0
+spot_angle = 26.6
