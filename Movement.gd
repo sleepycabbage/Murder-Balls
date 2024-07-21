@@ -10,7 +10,7 @@ extends RigidBody3D
 
 @onready var groundDetector = $GroundDetector
 
-signal dead
+signal hasWon
 
 const movementSpeed=30
 
@@ -58,8 +58,6 @@ func _physics_process(delta):
 	
 	jumpBuffer-=delta*60
 	
-	print(jumpBuffer)
-	
 	if Input.is_action_just_pressed("Jump"):
 		jumpBuffer=jumpBufferTime
 	
@@ -87,3 +85,10 @@ func _physics_process(delta):
 	if direction != Vector3.ZERO:
 		apply_torque(direction*delta*ACCELERATION)
 	pass
+
+
+func _on_area_collider_area_entered(area):
+	print(area.get_groups())
+	if(area.is_in_group("winPad")):
+		hasWon.emit()
+	pass # Replace with function body.

@@ -9,7 +9,7 @@ transform = Transform3D(1, 0, 0, 0, 0.106203, 0, 0, 0, 1, 0, 0, 0)
 radius = 1.101
 sides = 30
 
-[node name="Area3D" type="Area3D" parent="."]
+[node name="Area3D" type="Area3D" parent="." groups=["winPad"]]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0.772579, 0)

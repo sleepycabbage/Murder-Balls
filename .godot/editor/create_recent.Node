@@ -1,8 +1,8 @@
 CollisionShape3D
 Area3D
+CSGCylinder3D
 CSGBox3D
 Node
-CSGCylinder3D
 RichTextLabel
 AudioStreamPlayer
 ColorRect
