@@ -1,19 +1,46 @@
-[gd_scene load_steps=4 format=3 uid="uid://8mqe118jo4iu"]
+[gd_scene load_steps=6 format=3 uid="uid://8mqe118jo4iu"]
 
 [ext_resource type="Script" path="res://maps/levelStart.gd" id="1_nbf12"]
-[ext_resource type="PackedScene" uid="uid://c0ppisg4me6c1" path="res://Terrain Cube.tscn" id="2_lejsg"]
+[ext_resource type="PackedScene" uid="uid://c0ppisg4me6c1" path="res://Objects/Terrain Cube.tscn" id="2_lejsg"]
 [ext_resource type="AudioStream" uid="uid://bmtahi1dwskmg" path="res://Music/Funky Radio.mp3" id="3_3agfr"]
+[ext_resource type="PackedScene" uid="uid://cal74r7io68wl" path="res://Objects/Spawn_Pad.tscn" id="4_1lfxx"]
+[ext_resource type="PackedScene" uid="uid://b4y5dk3twrr2k" path="res://Objects/Death_Zone.tscn" id="5_5lmkx"]
 
 [node name="map" type="Node3D"]
 transform = Transform3D(1.00019, 0, 0, 0, 1.00019, 0, 0, 0, 1.00019, 0, 0, 0)
 script = ExtResource("1_nbf12")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(0.519206, -0.831171, -0.198948, 0.854649, 0.504943, 0.120862, 0, -0.232783, 0.972529, 0, 61.4632, 0)
-
-[node name="RigidBody3D" parent="." instance=ExtResource("2_lejsg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.302581, 0, 0, 0)
+transform = Transform3D(1, 0, 0, 0, -0.173648, 0.984808, 0, -0.984808, -0.173648, 0, 61.4632, 0)
+shadow_enabled = true
+shadow_blur = 0.095
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_3agfr")
 autoplay = true
+
+[node name="SpawnPad" parent="." instance=ExtResource("4_1lfxx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+
+[node name="Walls" type="Node" parent="."]
+
+[node name="RigidBody3D" parent="Walls" instance=ExtResource("2_lejsg")]
+transform = Transform3D(0.42774, 0, 0, 0, 1.00019, 0, 0, 0, 0.302639, -9.81394, 0, 0)
+
+[node name="RigidBody3D2" parent="Walls" instance=ExtResource("2_lejsg")]
+transform = Transform3D(0.374799, -0.169204, 0, 0.0878875, 0.721574, 0, 0, 0, 0.0915725, -35.982, -2.95296, -0.00389576)
+
+[node name="RigidBody3D3" parent="Walls" instance=ExtResource("2_lejsg")]
+transform = Transform3D(0.364554, 0.237686, 0, -0.123459, 0.701851, 0, 0, 0, 0.0915551, -63.2977, -2.40986, -0.00389502)
+
+[node name="RigidBody3D4" parent="Walls" instance=ExtResource("2_lejsg")]
+transform = Transform3D(0.384892, 0, 0, 0, 0.741006, 0, 0, 0, 0.0915551, -91.1784, -0.961413, -0.00389502)
+
+[node name="RigidBody3D5" parent="Walls" instance=ExtResource("2_lejsg")]
+transform = Transform3D(-2.44028e-09, -0.283522, 0, 0.0558271, -1.23932e-08, 0, 0, 0, 0.0915551, -105.501, 0.54219, 0.0282257)
+
+[node name="RigidBody3D6" parent="Walls" instance=ExtResource("2_lejsg")]
+transform = Transform3D(0.254316, 0, 0, 0, 0.741006, 0, 0, 0, 0.0915551, -98.3886, -7.80298, -0.00389502)
+
+[node name="DeathZone" parent="." instance=ExtResource("5_5lmkx")]
+transform = Transform3D(95164.9, 0, 0, 0, 0.555162, 0, 0, 0, 35413.8, 0, -17.8876, 0)

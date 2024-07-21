@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://cal74r7io68wl"]
+
+[node name="SpawnPad" type="Node3D"]
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.106203, 0, 0, 0, 1, 0, 0, 0)
+radius = 1.101
+sides = 30

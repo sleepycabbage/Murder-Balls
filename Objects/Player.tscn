@@ -1,9 +1,9 @@
 [gd_scene load_steps=9 format=3 uid="uid://4rchtdy7qffx"]
 
-[ext_resource type="Script" path="res://Movement.gd" id="1_fxe74"]
-[ext_resource type="Texture2D" uid="uid://dlhxovx610utk" path="res://Character sprites/phil_body.png" id="2_gb16y"]
-[ext_resource type="PackedScene" uid="uid://hx6vmxkr1agi" path="res://CameraHolder.tscn" id="2_pgxj6"]
-[ext_resource type="PackedScene" uid="uid://bfql3jfbhv4g" path="res://phil face.tscn" id="4_1t3nf"]
+[ext_resource type="Script" path="res://Movement.gd" id="1_cx16j"]
+[ext_resource type="Texture2D" uid="uid://dlhxovx610utk" path="res://Character sprites/phil_body.png" id="2_mdo0f"]
+[ext_resource type="PackedScene" uid="uid://bfql3jfbhv4g" path="res://Objects/phil face.tscn" id="3_o28hp"]
+[ext_resource type="PackedScene" uid="uid://hx6vmxkr1agi" path="res://CameraHolder.tscn" id="4_ewlxt"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_eufuu"]
 bounce = 0.62
@@ -13,7 +13,7 @@ bounce = 0.62
 [sub_resource type="SphereMesh" id="SphereMesh_pnrsi"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_odgib"]
-albedo_texture = ExtResource("2_gb16y")
+albedo_texture = ExtResource("2_mdo0f")
 roughness = 0.5
 emission_energy_multiplier = 0.0
 normal_scale = 8.91
@@ -33,9 +33,10 @@ physics_material_override = SubResource("PhysicsMaterial_eufuu")
 gravity_scale = 3.0
 linear_damp = 0.2
 angular_damp = 0.2
-script = ExtResource("1_fxe74")
+script = ExtResource("1_cx16j")
 cameraHolder = NodePath("../CameraHolder")
 face = NodePath("Face")
+jumpBufferTime = 30
 maxHealth = 100.0
 
 [node name="Collider" type="CollisionShape3D" parent="Player"]
@@ -46,10 +47,12 @@ mesh = SubResource("SphereMesh_pnrsi")
 surface_material_override/0 = SubResource("StandardMaterial3D_odgib")
 
 [node name="GroundDetector" type="RayCast3D" parent="Player"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+target_position = Vector3(0, -0.6, 0)
 
-[node name="Face" parent="Player" instance=ExtResource("4_1t3nf")]
+[node name="Face" parent="Player" instance=ExtResource("3_o28hp")]
 transform = Transform3D(-3.64261e-08, 0, 0.833333, 0, 0.833333, 0, -0.833333, 0, -3.64261e-08, 0.5, 0, 0)
 skeleton = NodePath("../..")
 
-[node name="CameraHolder" parent="." instance=ExtResource("2_pgxj6")]
+[node name="CameraHolder" parent="." instance=ExtResource("4_ewlxt")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)

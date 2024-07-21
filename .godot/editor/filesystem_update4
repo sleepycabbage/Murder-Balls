@@ -1,9 +1,1 @@
-res://Rooms/menu.tscn
-res://Rooms/menu.gd
-res://Rooms/Main Menu.tscn
-res://maps/Map 1.tscn
 res://maps/Level 1.tscn
-res://maps/levelStart.gd
-res://Player.tscn
-res://Movement.gd
-res://UIHealthBar.tscn

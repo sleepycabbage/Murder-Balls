@@ -1,3 +1,8 @@
+CollisionShape3D
+CSGBox3D
+Area3D
+Node
+CSGCylinder3D
 RichTextLabel
 AudioStreamPlayer
 ColorRect
@@ -7,6 +12,3 @@ Camera3D
 Button
 Node2D
 MenuButton
-MeshInstance3D
-CollisionShape3D
-Node3D

@@ -6,6 +6,8 @@ extends RigidBody3D
 
 @export var quickTurn : bool
 
+@export var jumpBufferTime : int
+
 @onready var groundDetector = $GroundDetector
 
 signal dead
@@ -26,30 +28,50 @@ const jumpForce=10
 
 var coyoteTime=0
 
+var jumpBuffer=0
+
+var camera=null
+
+var defaultFov = 99.4
+
 @export var maxHealth : float
 
 var localHealth=100
 
 func _ready():
+	camera=cameraHolder.get_children()[0].get_children()[1]
+	print(camera)
 	pass
 
-func _physics_process(delta):
-	localHealth-=0.01
-	print(localHealth)
+func _physics_process(delta):	
+	var speedNormal = Vector3(linear_velocity.x,0,linear_velocity.z).normalized()
+	
+	var speed = speedNormal.x+speedNormal.z
+	
+	camera.fov-=(camera.fov-defaultFov*(abs(speed/7)+1))/10
+	
 	#detect if we're on the ground
 	groundDetector.global_rotation=Vector3.ZERO
 	var onGround=groundDetector.is_colliding()
 	#reduce coyote time
 	coyoteTime-=delta*60
 	
+	jumpBuffer-=delta*60
+	
+	print(jumpBuffer)
+	
+	if Input.is_action_just_pressed("Jump"):
+		jumpBuffer=jumpBufferTime
+	
 	#if we're on the ground, set coyote time to the max
 	if onGround:
 		coyoteTime=maxCoyoteTime
 	#jumping
 	if coyoteTime>0:
-		if Input.is_action_just_pressed("Jump"):
+		if jumpBuffer>0:
 			linear_velocity.y=jumpForce
 			coyoteTime=0
+			jumpBuffer=0
 	#set the camera's position to our position
 	cameraHolder.position=position
 	
@@ -64,11 +86,4 @@ func _physics_process(delta):
 	#movement uwu
 	if direction != Vector3.ZERO:
 		apply_torque(direction*delta*ACCELERATION)
-	
-	# if we're below y -300 set us back to spawn with no speed
-	if(position.y<-20):
-		position=Vector3(0,3,0)
-		linear_velocity=Vector3(0,0,0)
-		angular_velocity=Vector3(0,0,0)
-		dead.emit()
 	pass
