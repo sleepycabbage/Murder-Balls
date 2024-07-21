@@ -1,11 +1,21 @@
 [gd_scene load_steps=3 format=3 uid="uid://c1vp6mdo5op1t"]
 
-[ext_resource type="PackedScene" uid="uid://7mj5boijctld" path="res://menu.tscn" id="1_kpcda"]
+[ext_resource type="PackedScene" uid="uid://7mj5boijctld" path="res://Rooms/menu.tscn" id="1_kpcda"]
 [ext_resource type="AudioStream" uid="uid://sx7tii38i446" path="res://Music/3 b side.ogg" id="2_stx3b"]
 
 [node name="MainMenu" type="Node3D"]
 
 [node name="menu" parent="." instance=ExtResource("1_kpcda")]
+offset_left = 67.0
+offset_right = 67.0
+room = "Level 1.tscn"
+buttonName = "Level 1"
+
+[node name="menu2" parent="." instance=ExtResource("1_kpcda")]
+offset_left = 420.0
+offset_right = 420.0
+room = "Map 1.tscn"
+buttonName = "Level 2"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("2_stx3b")

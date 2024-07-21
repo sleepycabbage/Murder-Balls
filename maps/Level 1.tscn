@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://8mqe118jo4iu"]
+
+[ext_resource type="Script" path="res://maps/levelStart.gd" id="1_nbf12"]
+[ext_resource type="PackedScene" uid="uid://c0ppisg4me6c1" path="res://Terrain Cube.tscn" id="2_lejsg"]
+[ext_resource type="AudioStream" uid="uid://bmtahi1dwskmg" path="res://Music/Funky Radio.mp3" id="3_3agfr"]
+
+[node name="map" type="Node3D"]
+transform = Transform3D(1.00019, 0, 0, 0, 1.00019, 0, 0, 0, 1.00019, 0, 0, 0)
+script = ExtResource("1_nbf12")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.519206, -0.831171, -0.198948, 0.854649, 0.504943, 0.120862, 0, -0.232783, 0.972529, 0, 61.4632, 0)
+
+[node name="RigidBody3D" parent="." instance=ExtResource("2_lejsg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.302581, 0, 0, 0)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_3agfr")
+autoplay = true

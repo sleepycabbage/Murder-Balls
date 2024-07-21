@@ -8,9 +8,7 @@ extends RigidBody3D
 
 @onready var groundDetector = $GroundDetector
 
-@onready var healthBar = $Control/HealthDisplay
-
-var healthBarSize
+signal dead
 
 const movementSpeed=30
 
@@ -33,11 +31,10 @@ var coyoteTime=0
 var localHealth=100
 
 func _ready():
-	healthBarSize=healthBar.size.x
+	pass
 
 func _physics_process(delta):
 	localHealth-=0.01
-	healthBar.size.x=(localHealth/100)*healthBarSize
 	print(localHealth)
 	#detect if we're on the ground
 	groundDetector.global_rotation=Vector3.ZERO
@@ -69,7 +66,9 @@ func _physics_process(delta):
 		apply_torque(direction*delta*ACCELERATION)
 	
 	# if we're below y -300 set us back to spawn with no speed
-	if(position.y<-300):
+	if(position.y<-20):
 		position=Vector3(0,3,0)
 		linear_velocity=Vector3(0,0,0)
+		angular_velocity=Vector3(0,0,0)
+		dead.emit()
 	pass

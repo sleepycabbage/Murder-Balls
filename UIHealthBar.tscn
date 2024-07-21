@@ -7,13 +7,10 @@ offset_right = 40.0
 offset_bottom = 40.0
 scale = Vector2(0.456681, 0.314607)
 
-[node name="HealthBackground" type="ColorRect" parent="."]
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
 layout_mode = 0
-offset_right = 685.0
-offset_bottom = 161.0
-
-[node name="HealthDisplay" type="ColorRect" parent="."]
-layout_mode = 0
-offset_right = 685.0
-offset_bottom = 161.0
-color = Color(0.837199, 0, 0.173176, 1)
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(18.087, 18.75)
+text = "aaa"
+fit_content = true

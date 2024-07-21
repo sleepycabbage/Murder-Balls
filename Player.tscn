@@ -1,10 +1,9 @@
-[gd_scene load_steps=10 format=3 uid="uid://4rchtdy7qffx"]
+[gd_scene load_steps=9 format=3 uid="uid://4rchtdy7qffx"]
 
 [ext_resource type="Script" path="res://Movement.gd" id="1_fxe74"]
 [ext_resource type="Texture2D" uid="uid://dlhxovx610utk" path="res://Character sprites/phil_body.png" id="2_gb16y"]
 [ext_resource type="PackedScene" uid="uid://hx6vmxkr1agi" path="res://CameraHolder.tscn" id="2_pgxj6"]
 [ext_resource type="PackedScene" uid="uid://bfql3jfbhv4g" path="res://phil face.tscn" id="4_1t3nf"]
-[ext_resource type="PackedScene" uid="uid://b8eflrhtq6ig6" path="res://UIHealthBar.tscn" id="5_kae3h"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_eufuu"]
 bounce = 0.62
@@ -51,8 +50,6 @@ surface_material_override/0 = SubResource("StandardMaterial3D_odgib")
 [node name="Face" parent="Player" instance=ExtResource("4_1t3nf")]
 transform = Transform3D(-3.64261e-08, 0, 0.833333, 0, 0.833333, 0, -0.833333, 0, -3.64261e-08, 0.5, 0, 0)
 skeleton = NodePath("../..")
-
-[node name="Control" parent="Player" instance=ExtResource("5_kae3h")]
 
 [node name="CameraHolder" parent="." instance=ExtResource("2_pgxj6")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
