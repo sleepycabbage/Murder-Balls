@@ -56,4 +56,4 @@ transform = Transform3D(-2.44028e-09, -0.283522, 0, 0.0558271, -1.23932e-08, 0, 
 transform = Transform3D(95164.9, 0, 0, 0, 0.555162, 0, 0, 0, 35413.8, 0, -17.8876, 0)
 
 [node name="WinPad" parent="." instance=ExtResource("6_s4dy7")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -91.8308, -7.43106, 0.0637471)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -91.831, -7.431, 0)
