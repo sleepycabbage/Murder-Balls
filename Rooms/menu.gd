@@ -7,6 +7,7 @@ extends Control
 @onready var child = $Button
 
 func _ready():
+	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	child.text=buttonName
 
 func _on_button_pressed():	

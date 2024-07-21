@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://b681s8ulgiqgr"]
+
+[ext_resource type="AudioStream" uid="uid://dyikjlcmp4216" path="res://Music/REZ.ogg" id="1_pwteq"]
+[ext_resource type="AudioStream" uid="uid://61c8qib5ae1k" path="res://Sounds/ready.ogg" id="2_n4rk6"]
+[ext_resource type="AudioStream" uid="uid://jn23f31hdidl" path="res://Sounds/GO.ogg" id="3_ooavn"]
+
+[node name="Audio" type="Node3D"]
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_pwteq")
+
+[node name="Ready" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_n4rk6")
+
+[node name="Go" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_ooavn")

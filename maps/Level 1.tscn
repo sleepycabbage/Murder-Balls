@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://8mqe118jo4iu"]
 
 [ext_resource type="Script" path="res://maps/levelStart.gd" id="1_nbf12"]
-[ext_resource type="AudioStream" uid="uid://dyikjlcmp4216" path="res://Music/REZ.ogg" id="2_dr4di"]
+[ext_resource type="PackedScene" uid="uid://b681s8ulgiqgr" path="res://audio.tscn" id="2_278ul"]
 [ext_resource type="PackedScene" uid="uid://c0ppisg4me6c1" path="res://Objects/Terrain Cube.tscn" id="2_lejsg"]
 [ext_resource type="PackedScene" uid="uid://cal74r7io68wl" path="res://Objects/Spawn_Pad.tscn" id="4_1lfxx"]
 [ext_resource type="PackedScene" uid="uid://b4y5dk3twrr2k" path="res://Objects/Death_Zone.tscn" id="5_5lmkx"]
@@ -11,17 +11,13 @@
 [node name="map" type="Node3D"]
 transform = Transform3D(1.00019, 0, 0, 0, 1.00019, 0, 0, 0, 1.00019, 0, 0, 0)
 script = ExtResource("1_nbf12")
-timeUntilPlayerStarts = null
-timeUntilPlayerLeaves = null
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, -0.173648, 0.984808, 0, -0.984808, -0.173648, 0, 61.4632, 0)
 shadow_enabled = true
 shadow_blur = 0.095
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("2_dr4di")
-autoplay = true
+[node name="Audio" parent="." instance=ExtResource("2_278ul")]
 
 [node name="SpawnPad" parent="." instance=ExtResource("4_1lfxx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
