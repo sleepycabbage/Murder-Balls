@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://dfhu6rqchldvi"]
+[gd_scene load_steps=11 format=3 uid="uid://dfhu6rqchldvi"]
 
 [ext_resource type="Script" path="res://maps/levelStart.gd" id="1_0v7yf"]
 [ext_resource type="PackedScene" uid="uid://dv2tsw4semmqa" path="res://Components/Lighting.tscn" id="2_pju03"]
@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://bkgnridyj2ouq" path="res://Objects/Win_Pad.tscn" id="8_0hg4s"]
 [ext_resource type="PackedScene" uid="uid://4rchtdy7qffx" path="res://Objects/Player.tscn" id="8_ftxju"]
 [ext_resource type="PackedScene" uid="uid://caysfyu4jguon" path="res://Objects/spotlight.tscn" id="9_fay6v"]
+[ext_resource type="PackedScene" uid="uid://yd1cv36lnvr3" path="res://Objects/Bumper.tscn" id="10_ukuix"]
 
 [node name="map" type="Node3D"]
 transform = Transform3D(1.00019, 0, 0, 0, 1.00019, 0, 0, 0, 1.00019, 0, 0, 0)
@@ -27,7 +28,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
 transform = Transform3D(0.42774, 0, 0, 0, 1.00019, 0, 0, 0, 0.302639, -9.81394, 0, 0)
 
 [node name="RigidBody3D6" parent="Walls" instance=ExtResource("5_7ps4h")]
-transform = Transform3D(0.42774, 0, 0, 0, 1.00019, 0, 0, 0, 0.302639, -9.81394, -16.0163, 0)
+transform = Transform3D(0.554645, 0, 0, 0, 1.00019, 0, 0, 0, 0.302639, -9.81394, -16.0163, 0)
 
 [node name="RigidBody3D2" parent="Walls" instance=ExtResource("5_7ps4h")]
 transform = Transform3D(0.0636379, 0, 0, 0, 1.00019, 0, 0, 0, 1.42121, -26.1629, 0, 16.691)
@@ -36,10 +37,7 @@ transform = Transform3D(0.0636379, 0, 0, 0, 1.00019, 0, 0, 0, 1.42121, -26.1629,
 transform = Transform3D(0.0636378, 0, 0, 0, 0.0385521, 0.186626, 0, -0.999447, 0.0071988, -26.1629, 0, 62.6586)
 
 [node name="RigidBody3D4" parent="Walls" instance=ExtResource("5_7ps4h")]
-transform = Transform3D(0.0636378, 0, 0, 0, 1.00019, 0, 0, 0, 0.494289, -26.1629, -13.6937, 47.2106)
-
-[node name="RigidBody3D5" parent="Walls" instance=ExtResource("5_7ps4h")]
-transform = Transform3D(0.0636378, 0, 0, 0, 1.00019, 0, 0, 0, 0.494289, -26.1629, -13.6937, 17.4402)
+transform = Transform3D(0.0636378, 0, 0, 0, 1.00019, 0, 0, 0, 0.864953, -26.1629, -13.6937, 33.5004)
 
 [node name="RigidBody3D10" parent="Walls" instance=ExtResource("5_7ps4h")]
 transform = Transform3D(0.0157274, 0, 0, 0, 36.5633, 0, 0, 0, 0.319159, 5.03776, 0, 0)
@@ -65,3 +63,77 @@ transform = Transform3D(95164.9, 0, 0, 0, 0.555162, 0, 0, 0, 35413.8, 0, -17.887
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.52826, -15.2899, 0.0290939)
 
 [node name="spotlight" parent="." instance=ExtResource("9_fay6v")]
+
+[node name="Bumpers" type="Node" parent="."]
+
+[node name="Bumper" parent="Bumpers" instance=ExtResource("10_ukuix")]
+transform = Transform3D(1.00019, 0, 0, 0, 1.00019, 0, 0, 0, 1.00019, -24.7685, 0.500095, 14.8147)
+
+[node name="Bumper2" parent="Bumpers" instance=ExtResource("10_ukuix")]
+transform = Transform3D(1.00019, 0, 0, 0, 1.00019, 0, 0, 0, 1.00019, -27.5252, 0.500095, 17.2908)
+
+[node name="Bumper3" parent="Bumpers" instance=ExtResource("10_ukuix")]
+transform = Transform3D(1.00019, 0, 0, 0, 1.00019, 0, 0, 0, 1.00019, -25.1924, 0.500094, 22.3387)
+
+[node name="Bumper4" parent="Bumpers" instance=ExtResource("10_ukuix")]
+transform = Transform3D(1.00019, 0, 0, 0, 1.00019, 0, 0, 0, 1.00019, -27.4935, 0.500095, 8.49768)
+
+[node name="Bumper5" parent="Bumpers" instance=ExtResource("10_ukuix")]
+transform = Transform3D(1.00019, 0, 0, 0, 1.00019, 0, 0, 0, 1.00019, -26.0917, 0.500095, 11.3775)
+
+[node name="Bumper6" parent="Bumpers" instance=ExtResource("10_ukuix")]
+transform = Transform3D(1.00019, 0, 0, 0, 1.00019, 0, 0, 0, 1.00019, -27.5538, 0.500095, 28.7915)
+
+[node name="Bumper7" parent="Bumpers" instance=ExtResource("10_ukuix")]
+transform = Transform3D(1.00019, 0, 0, 0, 1.00019, 0, 0, 0, 1.00019, -25.3489, 0.500095, 32.0549)
+
+[node name="Bumper8" parent="Bumpers" instance=ExtResource("10_ukuix")]
+transform = Transform3D(1.00019, 0, 0, 0, 1.00019, 0, 0, 0, 1.00019, -26.15, 0.500095, 17.5437)
+
+[node name="Bumper9" parent="Bumpers" instance=ExtResource("10_ukuix")]
+transform = Transform3D(1.00019, 0, 0, 0, 1.00019, 0, 0, 0, 1.00019, -24.9414, 0.500095, 17.6304)
+
+[node name="Bumper10" parent="Bumpers" instance=ExtResource("10_ukuix")]
+transform = Transform3D(1.00019, 0, 0, 0, 1.00019, 0, 0, 0, 1.00019, -24.1512, -11.2015, 23.5835)
+
+[node name="Bumper11" parent="Bumpers" instance=ExtResource("10_ukuix")]
+transform = Transform3D(1.00019, 0, 0, 0, 1.00019, 0, 0, 0, 1.00019, -24.6216, -11.1836, 23.4146)
+
+[node name="Bumper12" parent="Bumpers" instance=ExtResource("10_ukuix")]
+transform = Transform3D(1.00019, 0, 0, 0, 1.00019, 0, 0, 0, 1.00019, -25.0236, -11.1353, 23.1211)
+
+[node name="Bumper13" parent="Bumpers" instance=ExtResource("10_ukuix")]
+transform = Transform3D(1.00019, 0, 0, 0, 1.00019, 0, 0, 0, 1.00019, -25.3343, -11.1758, 22.7313)
+
+[node name="Bumper14" parent="Bumpers" instance=ExtResource("10_ukuix")]
+transform = Transform3D(1.00019, 0, 0, 0, 1.00019, 0, 0, 0, 1.00019, -25.7273, -11.1499, 22.4231)
+
+[node name="Bumper15" parent="Bumpers" instance=ExtResource("10_ukuix")]
+transform = Transform3D(1.00019, 0, 0, 0, 1.00019, 0, 0, 0, 1.00019, -26.2222, -11.2091, 22.382)
+
+[node name="Bumper16" parent="Bumpers" instance=ExtResource("10_ukuix")]
+transform = Transform3D(1.00019, 0, 0, 0, 1.00019, 0, 0, 0, 1.00019, -26.7211, -11.1869, 22.4086)
+
+[node name="Bumper17" parent="Bumpers" instance=ExtResource("10_ukuix")]
+transform = Transform3D(1.00019, 0, 0, 0, 1.00019, 0, 0, 0, 1.00019, -27.2154, -11.1219, 22.3692)
+
+[node name="Bumper18" parent="Bumpers" instance=ExtResource("10_ukuix")]
+transform = Transform3D(1.00019, 0, 0, 0, 1.00019, 0, 0, 0, 1.00019, -27.6736, -10.9481, 22.2694)
+
+[node name="Bumper19" parent="Bumpers" instance=ExtResource("10_ukuix")]
+transform = Transform3D(1.00019, 0, 0, 0, 1.00019, 0, 0, 0, 1.00019, -28.1478, -10.8604, 22.1372)
+
+[node name="Bumper20" parent="Bumpers" instance=ExtResource("10_ukuix")]
+transform = Transform3D(1.00019, 0, 0, 0, 1.00019, 0, 0, 0, 1.00019, -26.4107, -11.6497, 22.2393)
+
+[node name="Bumper21" parent="Bumpers" instance=ExtResource("10_ukuix")]
+transform = Transform3D(1.00019, 0, 0, 0, 1.00019, 0, 0, 0, 1.00019, -26.4082, -12.293, 21.9663)
+
+[node name="Bumper22" parent="Bumpers" instance=ExtResource("10_ukuix")]
+transform = Transform3D(1.00019, 0, 0, 0, 1.00019, 0, 0, 0, 1.00019, -26.4304, -13.1936, 21.9079)
+
+[node name="Bumper23" parent="Bumpers" instance=ExtResource("10_ukuix")]
+transform = Transform3D(1.00019, 0, 0, 0, 1.00019, 0, 0, 0, 1.00019, -26.4397, -12.6799, 21.651)
+
+[node name="Bumper24" parent="Bumpers" instance=ExtResource("10_ukuix")]
+transform = Transform3D(1.00019, 0, 0, 0, 1.00019, 0, 0, 0, 1.00019, -26.4956, -10.8949, 22.071)

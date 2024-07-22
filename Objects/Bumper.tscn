@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://yd1cv36lnvr3"]
+
+[ext_resource type="Texture2D" uid="uid://c5kb143ssf4qr" path="res://Character sprites/bumper.png" id="1_s15dc"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_0esbp"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l7dxb"]
+albedo_texture = ExtResource("1_s15dc")
+
+[node name="Bumper" type="Node3D"]
+
+[node name="RigidBody3D" type="RigidBody3D" parent="."]
+freeze = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
+shape = SubResource("SphereShape3D_0esbp")
+
+[node name="CSGSphere3D" type="CSGSphere3D" parent="RigidBody3D/CollisionShape3D"]
+material_override = SubResource("StandardMaterial3D_l7dxb")
+radial_segments = 20
+rings = 20
