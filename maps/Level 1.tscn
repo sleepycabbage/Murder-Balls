@@ -18,53 +18,62 @@ script = ExtResource("1_nbf12")
 [node name="Audio" parent="." instance=ExtResource("2_278ul")]
 
 [node name="SpawnPad" parent="." instance=ExtResource("4_1lfxx")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+transform = Transform3D(0.999999, 0, 0, 0, 0.999999, 0, 0, 0, 0.999999, -57.4619, 0.499999, 59.3984)
 
 [node name="Walls" type="Node" parent="."]
 
 [node name="RigidBody3D" parent="Walls" instance=ExtResource("2_lejsg")]
-transform = Transform3D(0.42774, 0, 0, 0, 1.00019, 0, 0, 0, 0.302639, -9.81394, 0, 0)
+transform = Transform3D(-0.00700979, 0, -0.302598, 0, 1.00019, 0, 0.427683, 0, -0.00495964, -57.4736, 0, 46.8775)
 
 [node name="RigidBody3D10" parent="Walls" instance=ExtResource("2_lejsg")]
-transform = Transform3D(0.0157274, 0, 0, 0, 5.28518, 0, 0, 0, 0.319159, 5.03776, 0, 0)
+transform = Transform3D(-0.00025774, 0, -0.319116, 0, 5.28518, 0, 0.0157253, 0, -0.00523037, -57.717, 0, 61.7272)
 
 [node name="RigidBody3D8" parent="Walls" instance=ExtResource("2_lejsg")]
-transform = Transform3D(0.42774, 0, 0, 0, 5.15009, 0, 0, 0, 0.00895332, -9.81394, 0, 7.20346)
+transform = Transform3D(-0.00700979, 0, -0.00895212, 0, 5.15009, 0, 0.427683, 0, -0.000146727, -64.6761, 0, 46.7595)
 
 [node name="RigidBody3D9" parent="Walls" instance=ExtResource("2_lejsg")]
-transform = Transform3D(0.42774, 0, 0, 0, 5.15009, 0, 0, 0, 0.00895332, -9.81394, 0, -7.19594)
+transform = Transform3D(-0.00700979, 0, -0.00895212, 0, 5.15009, 0, 0.427683, 0, -0.000146727, -50.2786, 0, 46.9955)
 
 [node name="RigidBody3D2" parent="Walls" instance=ExtResource("2_lejsg")]
-transform = Transform3D(0.374799, -0.169204, 0, 0.0878875, 0.721574, 0, 0, 0, 0.0915725, -35.982, -2.95296, -0.00389576)
+transform = Transform3D(-0.00614219, 0.00277293, -0.0915602, 0.0878875, 0.721574, 0, 0.374749, -0.169181, -0.00150069, -57.0409, -2.95296, 20.7131)
 
 [node name="RigidBody3D3" parent="Walls" instance=ExtResource("2_lejsg")]
-transform = Transform3D(0.364554, 0.237686, 0, -0.123459, 0.701851, 0, 0, 0, 0.0915551, -63.2977, -2.40986, -0.00389502)
+transform = Transform3D(-0.00597429, -0.00389521, -0.0915428, -0.123459, 0.701851, 0, 0.364505, 0.237654, -0.0015004, -56.5932, -2.40986, -6.59898)
 
 [node name="RigidBody3D11" parent="Walls" instance=ExtResource("2_lejsg")]
-transform = Transform3D(0.363709, 0.320763, 0, -0.123173, 0.94716, 0, 0, 0, 0.007, -63.2977, -1.96922, -2.01308)
+transform = Transform3D(-0.00596045, -0.00525665, -0.00699906, -0.123173, 0.94716, 0, 0.36366, 0.32072, -0.000114716, -54.5843, -1.96922, -6.56605)
 
 [node name="RigidBody3D12" parent="Walls" instance=ExtResource("2_lejsg")]
-transform = Transform3D(0.363709, 0.320763, 0, -0.123173, 0.94716, 0, 0, 0, 0.007, -63.2977, -1.96922, 1.94889)
+transform = Transform3D(-0.00596045, -0.00525665, -0.00699906, -0.123173, 0.94716, 0, 0.36366, 0.32072, -0.000114716, -58.5457, -1.96922, -6.63098)
 
 [node name="RigidBody3D4" parent="Walls" instance=ExtResource("2_lejsg")]
-transform = Transform3D(0.384892, 0, 0, 0, 0.741006, 0, 0, 0, 0.0915551, -91.1784, -0.961413, -0.00389502)
+transform = Transform3D(-0.0063076, 0, -0.0915428, 0, 0.741006, 0, 0.38484, 0, -0.0015004, -56.1363, -0.961413, -34.4759)
 
 [node name="RigidBody3D5" parent="Walls" instance=ExtResource("2_lejsg")]
-transform = Transform3D(-2.44028e-09, -0.283522, 0, 0.0558271, -1.23932e-08, 0, 0, 0, 0.0915551, -106.147, 0.54219, 0.0282257)
+transform = Transform3D(3.99914e-11, 0.00464635, -0.0915428, 0.0558271, -1.23932e-08, 1.93875e-23, -2.43995e-09, -0.283484, -0.0015004, -55.9231, 0.54219, -49.4431)
 
 [node name="RigidBody3D6" parent="Walls" instance=ExtResource("2_lejsg")]
-transform = Transform3D(0.286142, 0, 0, 0, 0.741006, 0, 0, 0, 0.213825, -97.2811, -10.213, -0.00389502)
+transform = Transform3D(-0.00468929, 0, -0.213796, 0, 0.741006, 0, 0.286104, 0, -0.00350416, -56.0363, -10.213, -40.5778)
 
 [node name="RigidBody3D13" parent="Walls" instance=ExtResource("2_lejsg")]
-transform = Transform3D(0.00563566, 0, 0, 0, 12.9551, 0, 0, 0, 0.213825, -87.4521, -7.73005, -0.00389502)
+transform = Transform3D(-9.2357e-05, 0, -0.213796, 0, 12.9551, 0, 0.0056349, 0, -0.00350416, -56.1974, -7.73005, -30.7501)
+
+[node name="RigidBody3D15" parent="Walls" instance=ExtResource("2_lejsg")]
+transform = Transform3D(-9.2357e-05, 0, -0.213796, 0, 12.9551, 0, 0.0056349, 0, -0.00350416, -56.1974, -7.73005, -51.3843)
+
+[node name="RigidBody3D14" parent="Walls" instance=ExtResource("2_lejsg")]
+transform = Transform3D(-0.00041335, -3.74805, -0.204079, -0.00552609, 2.53362, 0.00343649, 0.00102572, 12.1395, -0.0637264, -65.3652, -7.73005, -17.6512)
+
+[node name="RigidBody3D16" parent="Walls" instance=ExtResource("2_lejsg")]
+transform = Transform3D(-0.00205684, 7.82193, -0.151538, -0.00379408, -9.02895, -0.0528265, -0.00362423, 5.01296, 0.141304, -65.7819, -12.3106, -37.2851)
 
 [node name="RigidBody3D7" parent="Walls" instance=ExtResource("2_lejsg")]
-transform = Transform3D(0.0689175, 0.305803, 0, -0.0625323, 0.337029, 0, 0, 0, 0.270095, -104.782, -5.69286, 0)
+transform = Transform3D(-0.00112942, -0.00501148, -0.270059, -0.0625323, 0.337029, 0, 0.0689083, 0.305762, -0.00442631, -55.9173, -5.69286, -48.0778)
 
 [node name="DeathZone" parent="." instance=ExtResource("5_5lmkx")]
 transform = Transform3D(95164.9, 0, 0, 0, 0.555162, 0, 0, 0, 35413.8, 0, -17.8876, 0)
 
 [node name="WinPad" parent="." instance=ExtResource("6_s4dy7")]
-transform = Transform3D(0.999999, 0, 0, 0, 0.999999, 0, 0, 0, 0.999999, -91.831, -9.80079, 0)
+transform = Transform3D(0.999997, 0.000283729, -0.000267831, -0.000283649, 0.999997, 0.000322443, 0.000267916, -0.000322372, 0.999997, -56.1023, -9.74302, -32.5177)
 
 [node name="Player" parent="." instance=ExtResource("7_a2w8f")]

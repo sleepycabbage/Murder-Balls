@@ -1,0 +1,37 @@
+[gd_scene load_steps=2 format=3 uid="uid://b8eflrhtq6ig6"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ae3dv"]
+font_size = 300
+outline_size = 40
+outline_color = Color(0, 0, 0, 1)
+shadow_size = 20
+shadow_color = Color(0, 0, 0, 0.572549)
+shadow_offset = Vector2(-20, 20)
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(0.456681, 0.314607)
+
+[node name="Timer" type="Label" parent="."]
+layout_mode = 1
+offset_right = 522.0
+offset_bottom = 409.0
+text = "aaa"
+label_settings = SubResource("LabelSettings_ae3dv")
+horizontal_alignment = 1
+
+[node name="Countdown" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 1900.0
+offset_right = 2422.0
+offset_bottom = 409.0
+grow_horizontal = 2
+text = "aaa"
+label_settings = SubResource("LabelSettings_ae3dv")
+horizontal_alignment = 1

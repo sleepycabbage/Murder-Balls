@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1721661327
+::res://::1721688535
 Button.gd::GDScript::-1::1716241680::0::1::::<>RefCounted<>::
 export_presets.cfg::TextFile::-1::1716146236::0::1::::<><>::
 icon.svg::CompressedTexture2D::2223087669956469933::1715910275::1717283445::1::::<><>::
@@ -9,25 +9,25 @@ dog.png::CompressedTexture2D::2161679048819977425::1716241680::1716241680::1::::
 dogface.png::CompressedTexture2D::9126886335010383792::1716241680::1716241680::1::::<><>::
 phil_body.png::CompressedTexture2D::7947212607289478888::1716241680::1716241680::1::::<><>::
 phil_face.png::CompressedTexture2D::8754219289001082886::1716241680::1716241680::1::::<><>::
-::res://Components/::1721592591
+::res://Components/::1721687493
 audio.tscn::PackedScene::4632011853133077661::1721589863::0::1::::<><>::uid://dyikjlcmp4216::::res://Music/REZ.ogg<>uid://61c8qib5ae1k::::res://Sounds/ready.ogg<>uid://jn23f31hdidl::::res://Sounds/GO.ogg
 CameraHolder.gd::GDScript::-1::1717253217::0::1::::<>Node3D<>::
 CameraHolder.tscn::PackedScene::540722988546162100::1721592405::0::1::::<><>::res://Components/CameraHolder.gd
 Camera_Holder.tscn::PackedScene::5270568280654994445::1721592405::0::1::::<><>::res://Components/CameraHolder.gd
 Lighting.tscn::PackedScene::8690152935127148400::1721592591::0::1::::<><>::
-UIHealthBar.gd::GDScript::-1::1716599102::0::1::::<>Control<>::
-UIHealthBar.tscn::PackedScene::4711234168057660707::1721573031::0::1::::<><>::
-::res://maps/::1721663043
-Level 1.tscn::PackedScene::2341984395447667640::1721663043::0::1::::<><>::res://maps/levelStart.gd<>uid://dv2tsw4semmqa::::res://Components/Lighting.tscn<>uid://b681s8ulgiqgr::::res://Components/audio.tscn<>uid://c0ppisg4me6c1::::res://Objects/Terrain Cube.tscn<>uid://cal74r7io68wl::::res://Objects/Spawn_Pad.tscn<>uid://b4y5dk3twrr2k::::res://Objects/Death_Zone.tscn<>uid://bkgnridyj2ouq::::res://Objects/Win_Pad.tscn<>uid://4rchtdy7qffx::::res://Objects/Player.tscn
-Level 2.tscn::PackedScene::7525927530728749414::1721663043::0::1::::<><>::res://maps/levelStart.gd<>uid://dv2tsw4semmqa::::res://Components/Lighting.tscn<>uid://b681s8ulgiqgr::::res://Components/audio.tscn<>uid://cal74r7io68wl::::res://Objects/Spawn_Pad.tscn<>uid://c0ppisg4me6c1::::res://Objects/Terrain Cube.tscn<>uid://b4y5dk3twrr2k::::res://Objects/Death_Zone.tscn<>uid://bkgnridyj2ouq::::res://Objects/Win_Pad.tscn<>uid://4rchtdy7qffx::::res://Objects/Player.tscn<>uid://caysfyu4jguon::::res://Objects/spotlight.tscn<>uid://yd1cv36lnvr3::::res://Objects/Bumper.tscn
-levelStart.gd::GDScript::-1::1721592398::0::1::::<>Node3D<>::
+UI.gd::GDScript::-1::1716599102::0::1::::<>Control<>::
+UI.tscn::PackedScene::4711234168057660707::1721687493::0::1::::<><>::
+::res://maps/::1721687493
+Level 1.tscn::PackedScene::2341984395447667640::1721687493::0::1::::<><>::res://maps/levelStart.gd<>uid://dv2tsw4semmqa::::res://Components/Lighting.tscn<>uid://b681s8ulgiqgr::::res://Components/audio.tscn<>uid://c0ppisg4me6c1::::res://Objects/Terrain Cube.tscn<>uid://cal74r7io68wl::::res://Objects/Spawn_Pad.tscn<>uid://b4y5dk3twrr2k::::res://Objects/Death_Zone.tscn<>uid://bkgnridyj2ouq::::res://Objects/Win_Pad.tscn<>uid://4rchtdy7qffx::::res://Objects/Player.tscn
+Level 2.tscn::PackedScene::7525927530728749414::1721687493::0::1::::<><>::res://maps/levelStart.gd<>uid://dv2tsw4semmqa::::res://Components/Lighting.tscn<>uid://b681s8ulgiqgr::::res://Components/audio.tscn<>uid://cal74r7io68wl::::res://Objects/Spawn_Pad.tscn<>uid://c0ppisg4me6c1::::res://Objects/Terrain Cube.tscn<>uid://b4y5dk3twrr2k::::res://Objects/Death_Zone.tscn<>uid://bkgnridyj2ouq::::res://Objects/Win_Pad.tscn<>uid://4rchtdy7qffx::::res://Objects/Player.tscn<>uid://caysfyu4jguon::::res://Objects/spotlight.tscn<>uid://yd1cv36lnvr3::::res://Objects/Bumper.tscn
+levelStart.gd::GDScript::-1::1721686647::0::1::::<>Node3D<>::
 ::res://Music/::1721584213
 3 b side.ogg::AudioStreamOggVorbis::1312857181542554045::1716073791::1716600384::1::::<><>::
 Funky Radio.mp3::AudioStreamMP3::3267922945752100758::1716600366::1721584174::1::::<><>::
 REZ.ogg::AudioStreamOggVorbis::8860933143910269783::1721584202::1721584213::1::::<><>::
-::res://Objects/::1721663196
+::res://Objects/::1721687493
 bumper.png::CompressedTexture2D::3880922308048824402::1721663196::1721663190::1::::<><>::
-Bumper.tscn::PackedScene::1692308741643304746::1721663043::0::1::::<><>::
+Bumper.tscn::PackedScene::1692308741643304746::1721687493::0::1::::<><>::uid://c5kb143ssf4qr::::res://Character sprites/bumper.png
 Death_Zone.tscn::PackedScene::4473269651839569708::1721582378::0::1::::<><>::
 Movement.gd::GDScript::-1::1721586426::0::1::::<>RigidBody3D<>::
 phil face.tscn::PackedScene::81503332811406172::1716241680::0::1::::<><>::uid://dwyuyh4jffipq::::res://Character sprites/phil_face.png
