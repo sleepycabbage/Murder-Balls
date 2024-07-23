@@ -17,6 +17,12 @@ offset_right = 420.0
 room = "Level 2.tscn"
 buttonName = "Level 2"
 
+[node name="menu3" parent="." instance=ExtResource("1_kpcda")]
+offset_left = 740.0
+offset_right = 740.0
+room = "Level 3.tscn"
+buttonName = "Level 2"
+
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("2_stx3b")
 autoplay = true
