@@ -2,3 +2,5 @@ res://maps/Level 1.tscn
 res://maps/Level 2.tscn
 res://Objects/Bumper.tscn
 res://Components/UI.tscn
+res://Rooms/Main Menu.tscn
+res://maps/Level Null.tscn
